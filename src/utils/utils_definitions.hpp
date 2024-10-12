@@ -346,7 +346,7 @@ enum MessageClasses : uint8_t {
 
 enum Fluids_t : uint8_t {
 	FLUID_NONE = 0, /* Blue */
-	FLUID_SALTY_WATER = 1, /* Blue */
+	FLUID_SALTWATER = 1, /* Blue */
 	FLUID_WINE = 2, /* Purple */
 	FLUID_BEER = 3, /* Orange */
 	FLUID_MUD = 4, /* Orange */
@@ -359,14 +359,14 @@ enum Fluids_t : uint8_t {
 	FLUID_LIFE = 11, /* Red */
 	FLUID_LEMONADE = 12, /* Yellow */
 	FLUID_RUM = 13, /* Orange */
-	FLUID_FRUITJUICE = 14, /* Yellow */
+	FLUID_FRUIT_JUICE = 14, /* Yellow */
 	FLUID_COCONUTMILK = 15, /* White */
 	FLUID_MEAD = 16, /* Orange */
 	FLUID_TEA = 17, /* Orange */
 	FLUID_INK = 18, /* Black */
 	FLUID_CANDY = 19, /* Red with white pieces */
 	FLUID_CHOCOLATE = 20, /* Brown */
-	FLUID_FRESH_WATER = 21, /* Blue */
+	FLUID_FRESHWATER = 21, /* Blue */
 	// 13.40 last fluid is 20, 21+ is a loop from 0 to 20 over and over again
 };
 
