@@ -76355,7 +76355,98 @@ Granted by TibiaGoals.com"/>
 		<attribute key="containersize" value="10"/>
 		<attribute key="decayTo" value="0"/>
 	</item>
-	
-				
+	<item id="49279" article="a" name="squid" plural="squids">
+		<attribute key="primarytype" value="food"/>
+		<attribute key="description" value="a delicious squid"/>
+		<attribute key="weight" value="1800"/>
+	</item>
+	<item id="49280" article="a" name="red squid" plural="red squids">
+		<attribute key="primarytype" value="food"/>
+		<attribute key="description" value="uma rarissima iguaria dos mares"/>
+		<attribute key="weight" value="1800"/>
+	</item>
+	<item id="49281" article="a" name="swimming crab" plural="swimming crabs">
+		<attribute key="primarytype" value="food"/>
+		<attribute key="description" value="uma rarissima iguaria dos mares"/>
+		<attribute key="weight" value="1800"/>
+	</item>
+	<item id="49282" article="a" name="blue catfish" plural="blue catfishs">
+		<attribute key="primarytype" value="food"/>
+		<attribute key="description" value="uma rarissima iguaria dos rios"/>
+		<attribute key="weight" value="1800"/>
+	</item>	
+	<item id="49283" article="a" name="tilapinha" plural="tilapinhas">
+		<attribute key="primarytype" value="food"/>
+		<attribute key="description" value="essa e pra voce filho"/>
+		<attribute key="weight" value="1800"/>
+	</item>		
+	<item id="49287" name="brown shoes">
+		<attribute key="primarytype" value="boots"/>
+		<attribute key="absorbpercentphysical" value="2"/>
+		<attribute key="absorbpercentice" value="8"/>
+		<attribute key="magiclevelpoints" value="2"/>
+		<attribute key="deathmagiclevelpoints" value="1"/>
+		<attribute key="speed" value="10"/>
+		<attribute key="armor" value="3"/>
+		<attribute key="weight" value="1900"/>
+		<attribute key="imbuementslot" value="1">
+			<attribute key="increase speed" value="10"/>
+		</attribute>
+		<attribute key="augments" value="1">
+			<attribute key="avatar of storm" value="cooldown">
+				<attribute key="value" value="900000" />
+			</attribute>
+			<attribute key="hell's core" value="critical extra damage">
+				<attribute key="value" value="8" />
+			</attribute>
+			<attribute key="energy wave" value="critical extra damage">
+				<attribute key="value" value="8" />
+			</attribute>
+		</attribute>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="1"/>
+			<attribute key="slot" value="feet"/>
+
+		</attribute>
+	</item>	
+	<item id="xxxxx" article="an" name="brown hat">
+		<attribute key="primarytype" value="helmets"/>
+		<attribute key="absorbpercentphysical" value="3"/>
+		<attribute key="absorbpercentpoison" value="7"/>
+		<attribute key="magiclevelpoints" value="3"/>
+		<attribute key="firemagiclevelpoints" value="1"/>
+		<attribute key="armor" value="9"/>
+		<attribute key="weight" value="1500"/>
+		<attribute key="imbuementslot" value="2">
+			<attribute key="mana leech" value="3"/>
+			<attribute key="skillboost shielding" value="3"/>
+			<attribute key="skillboost magic level" value="3"/>
+		</attribute>
+		<attribute key="script" value="moveevent">
+			<attribute key="level" value="1"/>
+			<attribute key="slot" value="head"/>
+
+		</attribute>
+	</item>		
+	<item id="xxxxx" article="a" name="brown robe">
+		<attribute key="primarytype" value="armors"/>
+		<attribute key="absorbpercentdeath" value="10"/>
+		<attribute key="magiclevelpoints" value="4"/>
+		<attribute key="armor" value="17"/>
+		<attribute key="weight" value="2400"/>
+		<attribute key="imbuementslot" value="2">
+			<attribute key="life leech" value="3"/>
+			<attribute key="elemental protection earth" value="3"/>
+			<attribute key="elemental protection fire" value="3"/>
+			<attribute key="elemental protection ice" value="3"/>
+			<attribute key="elemental protection energy" value="3"/>
+			<attribute key="elemental protection holy" value="3"/>
+		</attribute>
+		<attribute key="script" value="moveevent">
+			<attribute key="slot" value="armor"/>
+			<attribute key="level" value="1"/>
+
+		</attribute>
+	</item>
 </items>
 
