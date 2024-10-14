@@ -29,7 +29,6 @@ function fishing.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 		return false
 	end
 
-
 	if math.random(100) <= math.min(math.max(10 + (player:getEffectiveSkillLevel(SKILL_FISHING) - 10) * 0.597, 10), 50) then
 		if useWorms and not player:removeItem("worm", 1) then
 			return true
@@ -40,7 +39,6 @@ function fishing.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 		end
 
 		if table.contains(seaIds, target.itemid) then
-
 			local rareChance = math.random(100)
 			if rareChance == 1 then
 				toPosition:sendMagicEffect(CONST_ME_WATERSPLASH)
@@ -57,7 +55,6 @@ function fishing.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 		end
 
 		if table.contains(riverIds, target.itemid) then
-
 			local rareChance1 = math.random(100)
 			if rareChance1 == 1 then
 				toPosition:sendMagicEffect(CONST_ME_WATERSPLASH)
@@ -72,31 +69,28 @@ function fishing.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 			end
 			return true
 		end
-	end	
-	
-	if (table.contains(seaIds, target.itemid) or table.contains(riverIds, target.itemid)) then
+	end
+
+	if table.contains(seaIds, target.itemid) or table.contains(riverIds, target.itemid) then
 		toPosition:sendMagicEffect(CONST_ME_LOSEENERGY)
 		local targetId = target.itemid
 		target:transform(targetId + 1)
 		if targetId == 4602 then
-			target:transform(4597)	
+			target:transform(4597)
 			target:decay()
-	
 		elseif targetId == 4614 then
-			target:transform(4609)	
+			target:transform(4609)
 			target:decay()
 		end
 		if targetId == 21307 then
-			target:transform(21302)	
+			target:transform(21302)
 			target:decay()
-			
 		elseif targetId == 21315 then
-			target:transform(21311)	
+			target:transform(21311)
 			target:decay()
-			end	
 		end
+	end
 	return true
-
 end
 
 fishing:id(3483)
