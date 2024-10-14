@@ -125,7 +125,6 @@ local foods = {
 	[49282] = { 60, "Mmmm." }, -- blue catfish
 	[49283] = { 60, "Mmmm." }, -- tilapinha
 	[49281] = { 60, "Mmmm." }, -- swimming crab
-	
 }
 
 local food = Action()
