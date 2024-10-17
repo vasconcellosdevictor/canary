@@ -131,6 +131,7 @@ function test.onStepIn(cid, item, position, fromPos)
         end
     end
 
-    return true]]--
+    return true]]
+--
 
-    print("Hello, World!") 
+print("Hello, World!")
