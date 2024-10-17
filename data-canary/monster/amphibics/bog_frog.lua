@@ -31,7 +31,7 @@ monster.maxHealth = 25
 monster.race = "blood"
 monster.corpse = 6079
 monster.speed = 160
-monster.manaCost = 305
+monster.manaCost = 0
 
 monster.changeTarget = {
 	interval = 4000,
@@ -43,23 +43,24 @@ monster.strategiesTarget = {
 }
 
 monster.flags = {
-	summonable = true,
+	summonable = false,
 	attackable = true,
 	hostile = true,
-	convinceable = true,
+	convinceable = false,
 	pushable = false,
 	rewardBoss = false,
-	illusionable = false,
-	canPushItems = false,
+	illusionable = true,
+	canPushItems = true,
 	canPushCreatures = false,
 	staticAttackChance = 90,
 	targetDistance = 1,
 	runHealth = 25,
 	healthHidden = false,
 	isBlockable = false,
-	canWalkOnEnergy = false,
-	canWalkOnFire = false,
-	canWalkOnPoison = false,
+	canWalkOnEnergy = true,
+	canWalkOnFire = true,
+	canWalkOnPoison = true,
+	isPreyExclusive = true,
 }
 
 monster.light = {
@@ -70,15 +71,16 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Ribbit! Ribbit!", yell = false },
 	{ text = "Ribbit!", yell = false },
+	{ text = "Ribbit! Ribbit!", yell = false },
 }
 
 monster.loot = {}
 
 monster.defenses = {
 	defense = 5,
-	armor = 10,
+	armor = 2,
+	mitigation = 0.15,
 }
 
 monster.elements = {

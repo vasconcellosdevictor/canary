@@ -76354,6 +76354,8 @@ Granted by TibiaGoals.com"/>
 		<attribute key="containersize" value="10"/>
 		<attribute key="decayTo" value="0"/>
 	</item>
+
+	<!--DAQUI PARA BAIXO SÃO TODOS ITENS CUSTOM REPENSAR OS NOMES DOS PEIXES	-->
 	<item id="49279" article="a" name="squid" plural="squids">
 		<attribute key="primarytype" value="food"/>
 		<attribute key="weight" value="1800"/>
@@ -76408,13 +76410,13 @@ Granted by TibiaGoals.com"/>
 		<attribute key="description" value="Tilapinha."/>
 		<attribute key="weight" value="1800"/>
 	</item>
-	<item id="49291" article="a" name="rainbow trout" plural="rainbow trouts">
+	<item id="49291" article="a" name="trout" plural="trouts"> 
 		<attribute key="primarytype" value="food"/>
 		<attribute key="weight" value="1800"/>
 	</item>
 	<item id="49292" article="a" name="black bass" plural="black basses">
 		<attribute key="primarytype" value="food"/>
 		<attribute key="weight" value="1800"/>
-	</item>	
+	</item>
 </items>
 

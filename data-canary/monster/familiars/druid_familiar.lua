@@ -1,4 +1,4 @@
-local mType = Game.createMonsterType("Druid familiar")
+local mType = Game.createMonsterType("Druid Familiar")
 local monster = {}
 
 monster.description = "a druid familiar"
@@ -75,6 +75,7 @@ monster.attacks = {
 monster.defenses = {
 	defense = 55,
 	armor = 55,
+	--	mitigation = ???,
 	{ name = "combat", interval = 2000, chance = 75, type = COMBAT_HEALING, minDamage = 600, maxDamage = 600, effect = CONST_ME_MAGIC_GREEN, target = false },
 }
 
@@ -93,9 +94,7 @@ monster.elements = {
 
 monster.immunities = {
 	{ type = "paralyze", condition = true },
-	{ type = "outfit", condition = false },
 	{ type = "invisible", condition = true },
-	{ type = "bleed", condition = false },
 }
 
 mType:register(monster)

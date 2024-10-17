@@ -1,4 +1,4 @@
-local mType = Game.createMonsterType("Knight familiar")
+local mType = Game.createMonsterType("Knight Familiar")
 local monster = {}
 
 monster.description = "a knight familiar"
@@ -78,7 +78,8 @@ monster.attacks = {
 monster.defenses = {
 	defense = 55,
 	armor = 55,
-	{ name = "combat", interval = 2000, chance = 75, type = COMBAT_HEALING, minDamage = 400, maxDamage = 400, effect = CONST_ME_MAGIC_GREEN, target = false },
+	--	mitigation = ???,
+	{ name = "combat", interval = 2000, chance = 75, type = COMBAT_HEALING, minDamage = 300, maxDamage = 300, effect = CONST_ME_MAGIC_GREEN, target = false },
 }
 
 monster.elements = {
@@ -96,9 +97,7 @@ monster.elements = {
 
 monster.immunities = {
 	{ type = "paralyze", condition = true },
-	{ type = "outfit", condition = false },
 	{ type = "invisible", condition = true },
-	{ type = "bleed", condition = false },
 }
 
 mType:register(monster)
