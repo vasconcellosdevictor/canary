@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="iso-8859-1"?>
 <items>
 	<!-- Liquids -->
     <!-- Fluid type 0 is same as water (id="1") -->
@@ -6785,7 +6785,7 @@
 		<attribute key="primarytype" value="valuables"/>
 		<attribute key="weight" value="10"/>
 	</item>
-	<item id="3031" article="a" name="gold coin">
+	<item id="3031" article="a" name="copper coin">
 		<attribute key="primarytype" value="valuables"/>
 		<attribute key="weight" value="10"/>
 	</item>
@@ -6802,7 +6802,7 @@
 		<attribute key="description" value="There are many rumours about these magic gems"/>
 		<attribute key="weight" value="20"/>
 	</item>
-	<item id="3035" article="a" name="platinum coin">
+	<item id="3035" article="a" name="silver coin">
 		<attribute key="primarytype" value="valuables"/>
 		<attribute key="weight" value="10"/>
 	</item>
@@ -6834,7 +6834,7 @@
 		<attribute key="primarytype" value="valuables"/>
 		<attribute key="weight" value="20"/>
 	</item>
-	<item id="3043" article="a" name="crystal coin">
+	<item id="3043" article="a" name="gold coin">
 		<attribute key="primarytype" value="valuables"/>
 		<attribute key="weight" value="10"/>
 	</item>
@@ -76355,7 +76355,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="decayTo" value="0"/>
 	</item>
 
-	<!--DAQUI PARA BAIXO SÃO TODOS ITENS CUSTOM REPENSAR OS NOMES DOS PEIXES	-->
+	<!--DAQUI PARA BAIXO SÃÂO TODOS ITENS CUSTOM REPENSAR OS NOMES DOS PEIXES	-->
 	<item id="49279" article="a" name="squid" plural="squids">
 		<attribute key="primarytype" value="food"/>
 		<attribute key="weight" value="1800"/>

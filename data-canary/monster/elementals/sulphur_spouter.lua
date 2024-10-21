@@ -75,7 +75,7 @@ monster.voices = {
 
 monster.loot = {
 	{ name = "Sulphur Powder", chance = 39440 },
-	{ name = "Crystal Coin", chance = 22310, minCount = 1, maxCount = 2 },
+	--{ name = "Crystal Coin", chance = 22310, minCount = 1, maxCount = 2 },
 	{ name = "Ultimate Mana Potion", chance = 12890, minCount = 1, maxCount = 2 },
 	{ name = "Yellow Gem", chance = 2820 },
 	{ id = 282, chance = 2450 }, -- Giant Shimmering Pearl (Green)

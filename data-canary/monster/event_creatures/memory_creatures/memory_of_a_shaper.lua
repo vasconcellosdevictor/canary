@@ -63,13 +63,13 @@ monster.voices = {
 }
 
 monster.loot = {
-	{ name = "gold coin", chance = 30000, maxCount = 171 },
+--	{ name = "gold coin", chance = 30000, maxCount = 171 },
 	{ name = "vortex bolt", chance = 15000, maxCount = 3 },
 	{ name = "gemmed figurine", chance = 7000 },
 	{ name = "great health potion", chance = 7000 },
 	{ name = "brown mushroom", chance = 7000 },
 	{ name = "meat", chance = 12000 },
-	{ name = "platinum coin", chance = 22000, maxCount = 2 },
+--	{ name = "platinum coin", chance = 22000, maxCount = 2 },
 	{ name = "small ruby", chance = 7000, maxCount = 2 },
 }
 

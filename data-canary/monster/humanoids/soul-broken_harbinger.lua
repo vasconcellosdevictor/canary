@@ -76,7 +76,7 @@ monster.voices = {
 }
 
 monster.loot = {
-	{ name = "platinum coin", chance = 100000, maxCount = 12 },
+--	{ name = "platinum coin", chance = 100000, maxCount = 12 },
 	{ id = 30058, chance = 15750, maxCount = 3 }, -- ice flower
 	{ name = "dream essence egg", chance = 13700 },
 	{ name = "elvish talisman", chance = 4790 },

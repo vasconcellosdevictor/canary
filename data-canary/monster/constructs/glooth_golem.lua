@@ -87,7 +87,7 @@ monster.loot = {
 	{ id = 21755, chance = 1470 }, -- bronze gear wheel
 	{ id = 8775, chance = 690 }, -- gear wheel
 	{ id = 21143, chance = 1970 }, -- glooth sandwich
-	{ id = 3035, chance = 6010, maxCount = 4 }, -- platinum coin
+	--{ id = 3035, chance = 6010, maxCount = 4 }, -- platinum coin
 	{ id = 21103, chance = 2840 }, -- glooth injection tube
 	{ id = 7643, chance = 4470 }, -- ultimate health potion
 	{ id = 238, chance = 9280 }, -- great mana potion

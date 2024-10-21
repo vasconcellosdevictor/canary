@@ -73,8 +73,8 @@ monster.light = {
 monster.voices = {}
 
 monster.loot = {
-	{ name = "gold coin", chance = 100000, maxCount = 100 },
-	{ name = "platinum coin", chance = 100000, maxCount = 20 },
+	--{ name = "gold coin", chance = 100000, maxCount = 100 },
+	--{ name = "platinum coin", chance = 100000, maxCount = 20 },
 	{ name = "weretiger tooth", chance = 13400 },
 	{ name = "beastslayer axe", chance = 3970 },
 	{ name = "ham", chance = 5500, maxCount = 2 },

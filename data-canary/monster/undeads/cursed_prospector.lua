@@ -73,7 +73,7 @@ monster.voices = {
 }
 
 monster.loot = {
-	{ name = "platinum coin", chance = 100000, maxCount = 5 },
+	--{ name = "platinum coin", chance = 100000, maxCount = 5 },
 	{ name = "flash arrow", chance = 17700, maxCount = 10 },
 	{ name = "great spirit potion", chance = 15190, maxCount = 2 },
 	{ name = "spectral silver nugget", chance = 11520 },

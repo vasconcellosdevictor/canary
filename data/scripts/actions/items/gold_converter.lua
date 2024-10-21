@@ -1,12 +1,12 @@
 local config = {
-	[ITEM_GOLD_COIN] = { changeTo = ITEM_PLATINUM_COIN },
-	[ITEM_PLATINUM_COIN] = { changeBack = ITEM_GOLD_COIN, changeTo = ITEM_CRYSTAL_COIN },
-	[ITEM_CRYSTAL_COIN] = { changeBack = ITEM_PLATINUM_COIN },
+	[ITEM_COPPER_COIN] = { changeTo = ITEM_SILVER_COIN },
+	[ITEM_SILVER_COIN] = { changeBack = ITEM_COPPER_COIN, changeTo = ITEM_GOLD_COIN },
+	[ITEM_GOLD_COIN] = { changeBack = ITEM_SILVER_COIN },
 }
 
-local goldConverter = Action()
+local copperConverter = Action()
 
-function goldConverter.onUse(player, item, fromPosition, target, toPosition, isHotkey)
+function copperConverter.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	local coin = config[target.itemid]
 	if not coin then
 		return false
@@ -31,5 +31,5 @@ function goldConverter.onUse(player, item, fromPosition, target, toPosition, isH
 	return true
 end
 
-goldConverter:id(23722, 25719)
-goldConverter:register()
+copperConverter:id(23722, 25719)
+copperConverter:register()

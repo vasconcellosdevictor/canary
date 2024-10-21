@@ -98,7 +98,7 @@ monster.loot = {
 	{ id = 3039, chance = 2220 }, -- red gem
 	{ name = "demonic essence", chance = 14630 },
 	{ name = "talon", chance = 3430 },
-	{ name = "platinum coin", chance = 90540, maxCount = 8 },
+	--{ name = "platinum coin", chance = 90540, maxCount = 8 },
 	{ name = "might ring", chance = 1890 },
 	{ id = 3049, chance = 2170 }, -- stealth ring
 	{ name = "platinum amulet", chance = 680 },

@@ -86,7 +86,7 @@ monster.loot = {
 	{ id = 3031, chance = 100000, maxCount = 290 }, -- gold coin
 	{ id = 5880, chance = 330 }, -- iron ore
 	{ id = 21755, chance = 1950 }, -- bronze gear wheel
-	{ id = 3035, chance = 58310, maxCount = 3 }, -- platinum coin
+	--{ id = 3035, chance = 58310, maxCount = 3 }, -- platinum coin
 	{ id = 3026, chance = 1300 }, -- white pearl
 	{ id = 3027, chance = 1630 }, -- black pearl
 	{ id = 236, chance = 10100, maxCount = 2 }, -- strong health potion

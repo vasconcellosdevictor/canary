@@ -82,7 +82,7 @@ monster.loot = {
 	{ id = 21198, chance = 3548 }, -- metal toe
 	{ id = 21170, chance = 1490 }, -- gearwheel chain
 	{ id = 3031, chance = 100000, maxCount = 200 }, -- gold coin
-	{ id = 3035, chance = 51610, maxCount = 3 }, -- platinum coin
+	--{ id = 3035, chance = 51610, maxCount = 3 }, -- platinum coin
 	{ id = 9057, chance = 16130, maxCount = 3 }, -- small topaz
 	{ id = 3032, chance = 6450, maxCount = 2 }, -- small emerald
 	{ id = 7642, chance = 3230 }, -- great spirit potion

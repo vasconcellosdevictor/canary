@@ -82,7 +82,7 @@ monster.loot = {
 	{ id = 3031, chance = 100000, maxCount = 200 }, -- gold coin
 	{ id = 21755, chance = 1490 }, -- bronze gear wheel
 	{ id = 21193, chance = 17160 }, -- metal jaw
-	{ id = 3035, chance = 43280, maxCount = 2 }, -- platinum coin
+	--{ id = 3035, chance = 43280, maxCount = 2 }, -- platinum coin
 	{ id = 236, chance = 9700, maxCount = 2 }, -- strong health potion
 	{ id = 237, chance = 9700, maxCount = 2 }, -- strong mana potion
 	{ id = 21171, chance = 1490 }, -- metal bat

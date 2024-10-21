@@ -1862,7 +1862,7 @@ ReturnValue Game::checkMoveItemToCylinder(std::shared_ptr<Player> player, std::s
 
 			bool allowAnything = g_configManager().getBoolean(TOGGLE_GOLD_POUCH_ALLOW_ANYTHING);
 
-			if (!allowAnything && item->getID() != ITEM_GOLD_COIN && item->getID() != ITEM_PLATINUM_COIN && item->getID() != ITEM_CRYSTAL_COIN) {
+			if (!allowAnything && item->getID() != ITEM_COPPER_COIN && item->getID() != ITEM_SILVER_COIN && item->getID() != ITEM_GOLD_COIN) {
 				return RETURNVALUE_ITEMCANNOTBEMOVEDPOUCH;
 			}
 
@@ -2658,7 +2658,7 @@ void Game::addMoney(std::shared_ptr<Cylinder> cylinder, uint64_t money, uint32_t
 	while (crystalCoins > 0) {
 		const uint16_t count = std::min<uint32_t>(100, crystalCoins);
 
-		std::shared_ptr<Item> remaindItem = Item::CreateItem(ITEM_CRYSTAL_COIN, count);
+		std::shared_ptr<Item> remaindItem = Item::CreateItem(ITEM_GOLD_COIN, count);
 
 		ReturnValue ret = internalAddItem(cylinder, remaindItem, INDEX_WHEREEVER, flags);
 		if (ret != RETURNVALUE_NOERROR) {
@@ -2670,7 +2670,7 @@ void Game::addMoney(std::shared_ptr<Cylinder> cylinder, uint64_t money, uint32_t
 
 	uint16_t platinumCoins = money / 100;
 	if (platinumCoins != 0) {
-		std::shared_ptr<Item> remaindItem = Item::CreateItem(ITEM_PLATINUM_COIN, platinumCoins);
+		std::shared_ptr<Item> remaindItem = Item::CreateItem(ITEM_SILVER_COIN, platinumCoins);
 
 		ReturnValue ret = internalAddItem(cylinder, remaindItem, INDEX_WHEREEVER, flags);
 		if (ret != RETURNVALUE_NOERROR) {
@@ -2681,7 +2681,7 @@ void Game::addMoney(std::shared_ptr<Cylinder> cylinder, uint64_t money, uint32_t
 	}
 
 	if (money != 0) {
-		std::shared_ptr<Item> remaindItem = Item::CreateItem(ITEM_GOLD_COIN, money);
+		std::shared_ptr<Item> remaindItem = Item::CreateItem(ITEM_COPPER_COIN, money);
 
 		ReturnValue ret = internalAddItem(cylinder, remaindItem, INDEX_WHEREEVER, flags);
 		if (ret != RETURNVALUE_NOERROR) {
@@ -3099,11 +3099,11 @@ ReturnValue Game::internalCollectManagedItems(std::shared_ptr<Player> player, st
 
 	// Send money to the bank
 	if (g_configManager().getBoolean(AUTOBANK)) {
-		if (item->getID() == ITEM_GOLD_COIN || item->getID() == ITEM_PLATINUM_COIN || item->getID() == ITEM_CRYSTAL_COIN) {
+		if (item->getID() == ITEM_COPPER_COIN || item->getID() == ITEM_SILVER_COIN || item->getID() == ITEM_GOLD_COIN) {
 			uint64_t money = 0;
-			if (item->getID() == ITEM_PLATINUM_COIN) {
+			if (item->getID() == ITEM_SILVER_COIN) {
 				money = item->getItemCount() * 100;
-			} else if (item->getID() == ITEM_CRYSTAL_COIN) {
+			} else if (item->getID() == ITEM_GOLD_COIN) {
 				money = item->getItemCount() * 10000;
 			} else {
 				money = item->getItemCount();
@@ -3254,11 +3254,11 @@ ObjectCategory_t Game::getObjectCategory(const ItemType &it) {
 uint64_t Game::getItemMarketPrice(const std::map<uint16_t, uint64_t> &itemMap, bool buyPrice) const {
 	uint64_t total = 0;
 	for (const auto &it : itemMap) {
-		if (it.first == ITEM_GOLD_COIN) {
+		if (it.first == ITEM_COPPER_COIN) {
 			total += it.second;
-		} else if (it.first == ITEM_PLATINUM_COIN) {
+		} else if (it.first == ITEM_SILVER_COIN) {
 			total += 100 * it.second;
-		} else if (it.first == ITEM_CRYSTAL_COIN) {
+		} else if (it.first == ITEM_GOLD_COIN) {
 			total += 10000 * it.second;
 		} else {
 			auto marketIt = itemsPriceMap.find(it.first);

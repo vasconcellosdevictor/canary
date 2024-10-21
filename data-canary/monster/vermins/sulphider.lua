@@ -77,7 +77,7 @@ monster.loot = {
 	{ name = "Sulphur Powder", chance = 29600 },
 	{ name = "Sulphider Shell", chance = 24660 },
 	{ name = "Ultimate Mana Potion", chance = 14620 },
-	{ name = "Crystal Coin", chance = 14430, minCount = 1, maxCount = 3 },
+--	{ name = "Crystal Coin", chance = 14430, minCount = 1, maxCount = 3 },
 	{ name = "White Pearl", chance = 5010 },
 	{ name = "Fire Axe", chance = 2450 },
 	{ name = "Magma Boots", chance = 1600 },

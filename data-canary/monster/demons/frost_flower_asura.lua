@@ -74,7 +74,7 @@ monster.voices = {
 
 monster.loot = {
 	{ id = 3031, chance = 70980, maxCount = 100 }, -- gold coin
-	{ id = 3035, chance = 80500, maxCount = 6 }, -- platinum coin
+	--{ id = 3035, chance = 80500, maxCount = 6 }, -- platinum coin
 	{ id = 3567, chance = 680 }, -- blue robe
 	{ id = 7368, chance = 6640, maxCount = 5 }, -- assassin star
 	{ id = 3027, chance = 5320, maxCount = 1 }, -- black pearl

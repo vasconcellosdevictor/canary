@@ -34,7 +34,7 @@ class NpcType : public SharedObject {
 
 		uint8_t speechBubble = SPEECHBUBBLE_NORMAL;
 
-		uint16_t currencyId = ITEM_GOLD_COIN;
+		uint16_t currencyId = ITEM_COPPER_COIN;
 
 		uint32_t yellChance = 0;
 		uint32_t yellSpeedTicks = 0;

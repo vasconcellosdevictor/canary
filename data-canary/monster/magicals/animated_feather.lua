@@ -74,7 +74,7 @@ monster.voices = {
 
 monster.loot = {
 	{ name = "small sapphire", chance = 8700, maxCount = 5 },
-	{ name = "platinum coin", chance = 87000, maxCount = 50 },
+--	{ name = "platinum coin", chance = 87000, maxCount = 50 },
 	{ id = 28570, chance = 500, maxCount = 10 }, -- glowing rune
 	{ id = 3051, chance = 8700 }, -- energy ring
 	{ id = 7441, chance = 4000 }, -- ice cube

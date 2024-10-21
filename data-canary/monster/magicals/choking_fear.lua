@@ -80,8 +80,8 @@ monster.voices = {
 }
 
 monster.loot = {
-	{ name = "gold coin", chance = 100000, maxCount = 100 },
-	{ name = "platinum coin", chance = 100000, maxCount = 8 },
+	--{ name = "gold coin", chance = 100000, maxCount = 100 },
+	--{ name = "platinum coin", chance = 100000, maxCount = 8 },
 	{ id = 3051, chance = 3000 }, -- energy ring
 	{ id = 3052, chance = 4200 }, -- life ring
 	{ id = 3098, chance = 3000 }, -- ring of healing

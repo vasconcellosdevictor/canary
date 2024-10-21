@@ -81,9 +81,9 @@ monster.voices = {
 }
 
 monster.loot = {
-	{ name = "gold coin", chance = 100000, maxCount = 100 },
-	{ name = "gold coin", chance = 100000, maxCount = 100 },
-	{ name = "platinum coin", chance = 70000, maxCount = 4 },
+	--{ name = "gold coin", chance = 100000, maxCount = 100 },
+	--{ name = "gold coin", chance = 100000, maxCount = 100 },
+	--{ name = "platinum coin", chance = 70000, maxCount = 4 }, XXXXX
 	{ name = "deepling breaktime snack", chance = 35520 },
 	{ name = "great mana potion", chance = 32640, maxCount = 3 },
 	{ name = "great health potion", chance = 33430, maxCount = 3 },

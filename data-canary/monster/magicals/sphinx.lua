@@ -76,7 +76,7 @@ monster.voices = {
 }
 
 monster.loot = {
-	{ name = "platinum coin", chance = 100000, maxCount = 3 },
+	--{ name = "platinum coin", chance = 100000, maxCount = 3 },
 	{ name = "sphinx feather", chance = 9300 },
 	{ name = "magma amulet", chance = 7000 },
 	{ id = 31438, chance = 5500 }, -- sphinx tiara

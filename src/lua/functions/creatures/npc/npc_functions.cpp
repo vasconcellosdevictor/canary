@@ -586,7 +586,7 @@ int NpcFunctions::luaNpcSellItem(lua_State* L) {
 	std::stringstream ss;
 	uint64_t itemCost = itemsPurchased * pricePerUnit;
 	uint64_t backpackCost = backpacksPurchased * shoppingBagPrice;
-	if (npc->getCurrency() == ITEM_GOLD_COIN) {
+	if (npc->getCurrency() == ITEM_COPPER_COIN) {
 		if (!g_game().removeMoney(player, itemCost + backpackCost, 0, true)) {
 			g_logger().error("[NpcFunctions::luaNpcSellItem (removeMoney)] - Player {} have a problem for buy item {} on shop for npc {}", player->getName(), itemId, npc->getName());
 			g_logger().debug("[Information] Player {} bought {} x item {} on shop for npc {}, at position {}", player->getName(), itemsPurchased, itemId, npc->getName(), player->getPosition().toString());

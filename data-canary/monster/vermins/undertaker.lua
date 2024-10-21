@@ -76,7 +76,7 @@ monster.voices = {
 monster.loot = {
 	{ name = "Great Spirit Potion", chance = 30660, minCount = 1, maxCount = 3 },
 	{ name = "Undertaker Fangs", chance = 25740 },
-	{ name = "Crystal Coin", chance = 15100, minCount = 1, maxCount = 3 },
+	--{ name = "Crystal Coin", chance = 15100, minCount = 1, maxCount = 3 },
 	{ name = "Spider Silk", chance = 3520 },
 	{ name = "Terra Boots", chance = 3390 },
 	{ name = "Blue Crystal Shard", chance = 1840 },

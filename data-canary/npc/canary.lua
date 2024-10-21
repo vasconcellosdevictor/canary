@@ -12,13 +12,13 @@ npcConfig.walkInterval = 2000
 npcConfig.walkRadius = 10
 
 npcConfig.outfit = {
-	lookType = 128,
+	lookType = 1781,
 	lookHead = 0,
 	lookBody = 0,
 	lookLegs = 0,
 	lookFeet = 0,
-	lookAddons = 2,
-	lookMount = 42,
+	lookAddons = 0,
+	lookMount = 0,
 }
 
 npcConfig.sounds = {

@@ -82,7 +82,7 @@ monster.loot = {
 	{ name = "crystal necklace", chance = 500 },
 	{ name = "gold coin", chance = 92500, maxCount = 341 },
 	{ name = "small amethyst", chance = 5850, maxCount = 2 },
-	{ name = "platinum coin", chance = 2250, maxCount = 3 },
+	--{ name = "platinum coin", chance = 2250, maxCount = 3 },
 	{ name = "mind stone", chance = 70 },
 	{ name = "giant sword", chance = 1250 },
 	{ name = "crowbar", chance = 10500 },

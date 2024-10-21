@@ -80,7 +80,7 @@ monster.voices = {
 }
 
 monster.loot = {
-	{ name = "gold coin", chance = 100000, maxCount = 150 },
+--	{ name = "gold coin", chance = 100000, maxCount = 150 },
 	{ name = "snakebite rod", chance = 11670 },
 	{ name = "taurus mace", chance = 5360 },
 	{ name = "cultish robe", chance = 9200 },
@@ -89,7 +89,7 @@ monster.loot = {
 	{ name = "small ruby", chance = 2030, maxCount = 2 },
 	{ name = "small topaz", chance = 2680, maxCount = 2 },
 	{ name = "yellow gem", chance = 220 },
-	{ name = "platinum coin", chance = 39350, maxCount = 3 },
+	--{ name = "platinum coin", chance = 39350, maxCount = 3 },
 	{ name = "small emerald", chance = 2540, maxCount = 2 },
 	{ name = "small sapphire", chance = 2170, maxCount = 2 },
 	{ name = "small diamond", chance = 2900, maxCount = 2 },

@@ -5,8 +5,8 @@ local data = {
 	},
 
 	coins = {
-		[ITEM_GOLD_COIN] = ITEM_PLATINUM_COIN,
-		[ITEM_PLATINUM_COIN] = ITEM_CRYSTAL_COIN,
+		[ITEM_COPPER_COIN] = ITEM_SILVER_COIN,
+		[ITEM_SILVER_COIN] = ITEM_GOLD_COIN,
 	},
 }
 
@@ -39,7 +39,7 @@ local function startConverter(playerId, converterItemId)
 		if converter and converter:hasAttribute(ITEM_ATTRIBUTE_CHARGES) then
 			local charges = converter:getAttribute(ITEM_ATTRIBUTE_CHARGES)
 			if charges >= 1 then
-				if player:getItemCount(ITEM_GOLD_COIN) >= 100 or player:getItemCount(ITEM_PLATINUM_COIN) >= 100 then
+				if player:getItemCount(ITEM_COPPER_COIN) >= 100 or player:getItemCount(ITEM_SILVER_COIN) >= 100 then
 					findAndConvertCoins(player, player:getStoreInbox(), converter)
 				end
 				addEvent(startConverter, 300, playerId, converterItemId)

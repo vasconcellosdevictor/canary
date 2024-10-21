@@ -73,15 +73,15 @@ function onUseMachete(player, item, fromPosition, target, toPosition, isHotkey)
 	return destroyItem(player, item, fromPosition, target, toPosition, isHotkey)
 end
 
-function onUsePick(player, item, fromPosition, target, toPosition, isHotkey)
+--[[function onUsePick(player, item, fromPosition, target, toPosition, isHotkey)
 	if target.itemid == 10310 then -- shiny stone refining
 		local chance = math.random(1, 100)
 		if chance == 1 then
-			player:addItem(ITEM_CRYSTAL_COIN) -- 1% chance of getting crystal coin
+			player:addItem(ITEM_GOLD_COIN) -- 1% chance of getting gold coin
 		elseif chance <= 6 then
-			player:addItem(ITEM_GOLD_COIN) -- 5% chance of getting gold coin
+			player:addItem(ITEM_COPPER_COIN) -- 5% chance of getting copper coin XXXXX
 		elseif chance <= 51 then
-			player:addItem(ITEM_PLATINUM_COIN) -- 45% chance of getting platinum coin
+			player:addItem(ITEM_SILVER_COIN) -- 45% chance of getting silver coin
 		else
 			player:addItem(3028) -- 49% chance of getting small diamond
 		end
@@ -89,7 +89,7 @@ function onUsePick(player, item, fromPosition, target, toPosition, isHotkey)
 		target:getPosition():sendMagicEffect(CONST_ME_BLOCKHIT)
 		target:remove(1)
 		return true
-	end
+	end]]
 
 	local tile = Tile(toPosition)
 	if not tile then
@@ -111,7 +111,7 @@ function onUsePick(player, item, fromPosition, target, toPosition, isHotkey)
 		return true
 	end
 
-	-- Ice fishing hole
+	--[[ Ice fishing hole
 	if ground.itemid == 7200 then
 		ground:transform(7236)
 		ground:decay()
@@ -119,7 +119,7 @@ function onUsePick(player, item, fromPosition, target, toPosition, isHotkey)
 		return true
 	end
 	return false
-end
+end XXXXX]]
 
 function onUseRope(player, item, fromPosition, target, toPosition, isHotkey)
 	local tile = Tile(toPosition)

@@ -4881,19 +4881,19 @@ void ProtocolGame::sendResourceBalance(Resource_t resourceType, uint64_t value) 
 void ProtocolGame::sendSaleItemList(const std::vector<ShopBlock> &shopVector, const std::map<uint16_t, uint16_t> &inventoryMap) {
 	sendResourceBalance(RESOURCE_BANK, player->getBankBalance());
 
-	uint16_t currency = player->getShopOwner() ? player->getShopOwner()->getCurrency() : static_cast<uint16_t>(ITEM_GOLD_COIN);
-	if (currency == ITEM_GOLD_COIN) {
+	uint16_t currency = player->getShopOwner() ? player->getShopOwner()->getCurrency() : static_cast<uint16_t>(ITEM_COPPER_COIN);
+	if (currency == ITEM_COPPER_COIN) {
 		// Since we already have full inventory map we shouldn't call getMoney here - it is simply wasting cpu power
 		uint64_t playerMoney = 0;
-		auto it = inventoryMap.find(ITEM_CRYSTAL_COIN);
+		auto it = inventoryMap.find(ITEM_GOLD_COIN);
 		if (it != inventoryMap.end()) {
 			playerMoney += static_cast<uint64_t>(it->second) * 10000;
 		}
-		it = inventoryMap.find(ITEM_PLATINUM_COIN);
+		it = inventoryMap.find(ITEM_SILVER_COIN);
 		if (it != inventoryMap.end()) {
 			playerMoney += static_cast<uint64_t>(it->second) * 100;
 		}
-		it = inventoryMap.find(ITEM_GOLD_COIN);
+		it = inventoryMap.find(ITEM_COPPER_COIN);
 		if (it != inventoryMap.end()) {
 			playerMoney += static_cast<uint64_t>(it->second);
 		}

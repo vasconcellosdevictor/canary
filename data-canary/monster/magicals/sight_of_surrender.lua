@@ -82,7 +82,7 @@ monster.voices = {
 }
 
 monster.loot = {
-	{ name = "platinum coin", chance = 100000, maxCount = 15 },
+	--{ name = "platinum coin", chance = 100000, maxCount = 15 },
 	{ name = "might ring", chance = 8000 },
 	{ name = "stone skin amulet", chance = 18000 },
 	{ name = "hammer of wrath", chance = 1380 },

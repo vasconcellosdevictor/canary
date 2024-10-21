@@ -83,7 +83,7 @@ monster.voices = {
 }
 
 monster.loot = {
-	{ name = "platinum coin", chance = 100000, maxCount = 3 },
+	--{ name = "platinum coin", chance = 100000, maxCount = 3 },
 	{ name = "fafnar symbol", chance = 6600 },
 	{ id = 31433, chance = 5600 }, -- secret instruction
 	{ id = 31435, chance = 5600 }, -- secret instruction

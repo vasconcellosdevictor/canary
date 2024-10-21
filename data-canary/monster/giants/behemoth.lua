@@ -81,9 +81,9 @@ monster.voices = {
 monster.loot = {
 	{ id = 2893, chance = 100 }, -- amphora
 	{ name = "crystal necklace", chance = 2530 },
-	{ name = "gold coin", chance = 100000, maxCount = 200 },
+	--{ name = "gold coin", chance = 100000, maxCount = 200 },
 	{ name = "small amethyst", chance = 6380, maxCount = 5 },
-	{ name = "platinum coin", chance = 59800, maxCount = 5 },
+	--{ name = "platinum coin", chance = 59800, maxCount = 5 },
 	{ name = "strange symbol", chance = 750 },
 	{ id = 3116, chance = 670 }, -- big bone
 	{ name = "two handed sword", chance = 5980 },

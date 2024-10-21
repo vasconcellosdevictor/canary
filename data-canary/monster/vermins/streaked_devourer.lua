@@ -76,7 +76,7 @@ monster.voices = {
 }
 
 monster.loot = {
-	{ name = "platinum coin", chance = 70000, maxCount = 28 },
+	--{ name = "platinum coin", chance = 70000, maxCount = 28 },
 	{ name = "gold ingot", chance = 16920, maxCount = 3 },
 	{ name = "streaked devourer maw", chance = 13850, maxCount = 2 },
 	{ name = "streaked devourer eyes", chance = 9230, maxCount = 2 },
