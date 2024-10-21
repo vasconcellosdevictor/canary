@@ -74,7 +74,7 @@ monster.voices = {
 }
 
 monster.loot = {
---	{ name = "platinum coin", chance = 100000, maxCount = 3 },
+	--	{ name = "platinum coin", chance = 100000, maxCount = 3 },
 	{ name = "green crystal shard", chance = 8740 },
 	{ name = "cyan crystal fragment", chance = 8620 },
 	{ id = 3039, chance = 8390 }, -- red gem
