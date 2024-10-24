@@ -220,8 +220,6 @@ bool Imbuements::loadFromXml(bool /* reloading */) {
 						} else if (tmpStrValue == "manaleech") {
 							usenormalskill = 3;
 							skillId = SKILL_MANA_LEECH_AMOUNT;
-						} else if (tmpStrValue == "mining") {
-							skillId = SKILL_MINING;
 						} else {
 							g_logger().warn("Unknow skill name {} in imbuement name {}", tmpStrValue, imbuement.name);
 							continue;

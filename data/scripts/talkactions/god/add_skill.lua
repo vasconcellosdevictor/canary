@@ -11,8 +11,6 @@ local function getSkillId(skillName)
 		return SKILL_SHIELD
 	elseif skillName:sub(1, 4) == "fish" then
 		return SKILL_FISHING
-	elseif skillName:sub(1, 4) == "mining" then
-		return SKILL_MINING
 	else
 		return SKILL_FIST
 	end
