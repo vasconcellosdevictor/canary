@@ -889,6 +889,16 @@ bool ConditionAttributes::setParam(ConditionParam_t param, int32_t value) {
 			return true;
 		}
 
+		case CONDITION_PARAM_SKILL_MINING: {
+			skills[SKILL_MINING] = value;
+			return true;
+		}
+
+		case CONDITION_PARAM_SKILL_MININGPERCENT: {
+			skillsPercent[SKILL_MINING] = value;
+			return true;
+		}
+
 		case CONDITION_PARAM_SKILL_CRITICAL_HIT_CHANCE: {
 			skills[SKILL_CRITICAL_HIT_CHANCE] = value;
 			return true;
