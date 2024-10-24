@@ -78,10 +78,10 @@ monster.voices = {
 monster.loot = {
 	{ name = "emerald bangle", chance = 3500 },
 	{ name = "small sapphire", chance = 11000, maxCount = 4 },
---	{ name = "gold coin", chance = 60000, maxCount = 100 },
---	{ name = "gold coin", chance = 60000, maxCount = 100 },
---	{ name = "gold coin", chance = 50000, maxCount = 67 },
---	{ name = "platinum coin", chance = 100000, maxCount = 7 },
+	--	{ name = "gold coin", chance = 60000, maxCount = 100 },
+	--	{ name = "gold coin", chance = 60000, maxCount = 100 },
+	--	{ name = "gold coin", chance = 50000, maxCount = 67 },
+	--	{ name = "platinum coin", chance = 100000, maxCount = 7 },
 	{ name = "violet gem", chance = 700 },
 	{ name = "yellow gem", chance = 5940 },
 	{ id = 3051, chance = 3150 }, -- energy ring

@@ -93,9 +93,9 @@ monster.voices = {
 monster.loot = {
 	{ name = "white pearl", chance = 5000 },
 	{ name = "black pearl", chance = 5960, maxCount = 3 },
---	{ name = "gold coin", chance = 100000, maxCount = 139 },
+	--	{ name = "gold coin", chance = 100000, maxCount = 139 },
 	{ name = "small emerald", chance = 2230, maxCount = 3 },
---	{ name = "platinum coin", chance = 19720 },
+	--	{ name = "platinum coin", chance = 19720 },
 	{ name = "yellow gem", chance = 690 },
 	{ name = "platinum amulet", chance = 450 },
 	{ id = 3059, chance = 10000 }, -- spellbook
