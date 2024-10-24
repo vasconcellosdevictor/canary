@@ -80,7 +80,7 @@ monster.loot = {
 	{ name = "white pearl", chance = 10000, maxCount = 3 },
 	{ name = "black pearl", chance = 12000, maxCount = 3 },
 	--{ name = "gold coin", chance = 100000, maxCount = 198 },
-	--	{ name = "platinum coin", chance = 100000, maxCount = 7 },
+--	{ name = "platinum coin", chance = 100000, maxCount = 7 },
 	{ id = 3039, chance = 15000 }, -- red gem
 	{ name = "stone skin amulet", chance = 2780 },
 	{ name = "blank rune", chance = 35250, maxCount = 3 },

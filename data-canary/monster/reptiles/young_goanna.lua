@@ -73,7 +73,7 @@ monster.voices = {
 }
 
 monster.loot = {
-	--	{ name = "platinum coin", chance = 100000, maxCount = 3 },
+--	{ name = "platinum coin", chance = 100000, maxCount = 3 },
 	{ name = "envenomed arrow", chance = 70400, maxCount = 35 },
 	{ name = "snakebite rod", chance = 10620 },
 	{ name = "goanna meat", chance = 10030 },

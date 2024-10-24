@@ -76,7 +76,7 @@ monster.voices = {
 }
 
 monster.loot = {
-	--	{ name = "platinum coin", chance = 100000, maxCount = 3 },
+--	{ name = "platinum coin", chance = 100000, maxCount = 3 },
 	{ name = "knife", chance = 10500 },
 	{ name = "cobra crest", chance = 7750 },
 	{ id = 3307, chance = 7750 }, -- scimitar

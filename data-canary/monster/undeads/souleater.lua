@@ -79,8 +79,8 @@ monster.voices = {
 
 monster.loot = {
 	--{ name = "gold coin", chance = 33400, maxCount = 100 },
-	--	{ name = "gold coin", chance = 33400, maxCount = 100 },
-	--	{ name = "platinum coin", chance = 49610, maxCount = 6 },
+--	{ name = "gold coin", chance = 33400, maxCount = 100 },
+--	{ name = "platinum coin", chance = 49610, maxCount = 6 },
 	{ name = "necrotic rod", chance = 980 },
 	{ name = "wand of cosmic energy", chance = 910 },
 	{ id = 5884, chance = 140 }, -- spirit container

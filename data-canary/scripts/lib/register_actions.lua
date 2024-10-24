@@ -91,27 +91,27 @@ end
 		return true
 	end]]
 
-local tile = Tile(toPosition)
-if not tile then
-	return false
-end
+	local tile = Tile(toPosition)
+	if not tile then
+		return false
+	end
 
-local ground = tile:getGround()
-if not ground then
-	return false
-end
+	local ground = tile:getGround()
+	if not ground then
+		return false
+	end
 
-if table.contains(groundIds, ground.itemid) and (ground:hasAttribute(ITEM_ATTRIBUTE_UNIQUEID) or ground:hasAttribute(ITEM_ATTRIBUTE_ACTIONID)) then
-	ground:transform(394)
-	ground:decay()
-	toPosition:sendMagicEffect(CONST_ME_POFF)
+	if table.contains(groundIds, ground.itemid) and (ground:hasAttribute(ITEM_ATTRIBUTE_UNIQUEID) or ground:hasAttribute(ITEM_ATTRIBUTE_ACTIONID)) then
+		ground:transform(394)
+		ground:decay()
+		toPosition:sendMagicEffect(CONST_ME_POFF)
 
-	toPosition.z = toPosition.z + 1
-	tile:relocateTo(toPosition)
-	return true
-end
+		toPosition.z = toPosition.z + 1
+		tile:relocateTo(toPosition)
+		return true
+	end
 
---[[ Ice fishing hole
+	--[[ Ice fishing hole
 	if ground.itemid == 7200 then
 		ground:transform(7236)
 		ground:decay()
