@@ -195,7 +195,7 @@ const phmap::flat_hash_map<std::string, TileFlags_t> TileStatesMap = {
 };
 
 const phmap::flat_hash_map<std::string, Fluids_t> FluidTypesMap = {
-	{ "water", FLUID_WATER },
+	{ "saltwater", FLUID_SALTWATER },
 	{ "blood", FLUID_BLOOD },
 	{ "beer", FLUID_BEER },
 	{ "slime", FLUID_SLIME },
@@ -215,6 +215,7 @@ const phmap::flat_hash_map<std::string, Fluids_t> FluidTypesMap = {
 	{ "ink", FLUID_INK },
 	{ "candyfluid", FLUID_CANDY },
 	{ "chocolate", FLUID_CHOCOLATE },
+	{ "freshwater", FLUID_FRESHWATER },
 };
 
 const phmap::flat_hash_map<std::string, WeaponType_t> WeaponTypesMap = {

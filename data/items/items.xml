@@ -76355,7 +76355,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="decayTo" value="0"/>
 	</item>
 
-	<!--DAQUI PARA BAIXO SÃÂO TODOS ITENS CUSTOM REPENSAR OS NOMES DOS PEIXES	-->
+	<!--DAQUI PARA BAIXO SÃÂÃÂO TODOS ITENS CUSTOM REPENSAR OS NOMES DOS PEIXES	-->
 	<item id="49279" article="a" name="squid" plural="squids">
 		<attribute key="primarytype" value="food"/>
 		<attribute key="weight" value="1800"/>
