@@ -1,4 +1,3 @@
-
 local hasteCondition = Condition(CONDITION_HASTE)
 hasteCondition:setParameter(CONDITION_PARAM_TICKS, 60 * 60 * 1000)
 hasteCondition:setParameter(CONDITION_PARAM_SPEED, 80)

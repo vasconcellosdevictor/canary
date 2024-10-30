@@ -4,7 +4,6 @@ local mininglootCommon = { 5880 } --common loot from sea: sardine, squid, red tu
 local mininglootRare = { 5880 } --rare loot from sea: red squid, flying fish, barracuda, bluefin
 local mininglootVeryRare = { 5880 } --veryrare loot from sea: codfish >>> adicionar marlin
 
-
 local miningSpecials = {
 	chances = {
 		{ from = 0, to = 500, itemId = 3026 }, -- white pearl
@@ -26,34 +25,35 @@ function mining.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	end
 
 	if math.random(100) <= math.min(math.max(10 + (player:getEffectiveSkillLevel(SKILL_MINING) - 10) * 0.597, 10), 50) then
-		if usePick --[[and not player:removeItem("pick", 1)]] then
+		if
+			usePick --[[and not player:removeItem("pick", 1)]]
+		then
 			return true
-			
 		end
 	end
 
-		if player:getItemCount(5880) > 1 then
-			player:addSkillTries(SKILL_MINING, 1, true)
-		return true	
-		end
+	if player:getItemCount(5880) > 1 then
+		player:addSkillTries(SKILL_MINING, 1, true)
+		return true
+	end
 
-		if table.contains(miningIds, target.itemid) then
-			local rareChance = math.random(100)
-			if rareChance == 1 then
-				toPosition:sendMagicEffect(CONST_ME_MAGIC_POWDER)
-				player:say("Waaah", TALKTYPE_MONSTER_SAY)
-				player:addItem(mininglootVeryRare[math.random(#mininglootVeryRare)], 1)
-			elseif rareChance == 2 then
-				player:addItem(mininglootRare[math.random(#mininglootRare)], 1)
-			elseif rareChance <= 10 then
-				player:addItem(mininglootCommon[math.random(#mininglootCommon)], 1)
-			else
-				player:addItem(gangueIds[math.random(#gangueIds)], 1)
-			end
-			return true
+	if table.contains(miningIds, target.itemid) then
+		local rareChance = math.random(100)
+		if rareChance == 1 then
+			toPosition:sendMagicEffect(CONST_ME_MAGIC_POWDER)
+			player:say("Waaah", TALKTYPE_MONSTER_SAY)
+			player:addItem(mininglootVeryRare[math.random(#mininglootVeryRare)], 1)
+		elseif rareChance == 2 then
+			player:addItem(mininglootRare[math.random(#mininglootRare)], 1)
+		elseif rareChance <= 10 then
+			player:addItem(mininglootCommon[math.random(#mininglootCommon)], 1)
+		else
+			player:addItem(gangueIds[math.random(#gangueIds)], 1)
 		end
+		return true
+	end
 
-		--[[if table.contains(riverIds, target.itemid) then
+	--[[if table.contains(riverIds, target.itemid) then
 			local rareChance1 = math.random(100)
 			if rareChance1 == 1 then
 				toPosition:sendMagicEffect(CONST_ME_WATERSPLASH)
