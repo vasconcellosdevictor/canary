@@ -1492,7 +1492,7 @@ const char* getReturnMessage(ReturnValue value) {
 
 		case RETURNVALUE_NOTENOUGHMININGLEVEL:
 			return "You do not have enough mining level";
-			
+
 		case RETURNVALUE_NOTPOSSIBLE:
 			return "Sorry, not possible.";
 

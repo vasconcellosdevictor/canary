@@ -489,7 +489,7 @@ void ItemParse::parseSkills(const std::string &tmpStrValue, pugi::xml_attribute 
 		itemType.getAbilities().skills[SKILL_DISTANCE] = pugi::cast<int32_t>(valueAttribute.value());
 	} else if (stringValue == "skillfish") {
 		itemType.getAbilities().skills[SKILL_FISHING] = pugi::cast<int32_t>(valueAttribute.value());
-		} else if (stringValue == "skillmining") {
+	} else if (stringValue == "skillmining") {
 		itemType.getAbilities().skills[SKILL_MINING] = pugi::cast<int32_t>(valueAttribute.value());
 	} else if (stringValue == "skillshield") {
 		itemType.getAbilities().skills[SKILL_SHIELD] = pugi::cast<int32_t>(valueAttribute.value());
