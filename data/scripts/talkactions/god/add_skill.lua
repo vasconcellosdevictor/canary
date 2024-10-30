@@ -9,6 +9,8 @@ local function getSkillId(skillName)
 		return SKILL_DISTANCE
 	elseif skillName:sub(1, 6) == "shield" then
 		return SKILL_SHIELD
+	elseif skillName:sub(1, 4) == "mining" then
+		return SKILL_MINING
 	elseif skillName:sub(1, 4) == "fish" then
 		return SKILL_FISHING
 	else

@@ -72,6 +72,7 @@ const phmap::flat_hash_map<std::string, ItemParseAttributes_t> ItemParseAttribut
 	{ "skillclub", ITEM_PARSE_SKILLCLUB },
 	{ "skilldist", ITEM_PARSE_SKILLDIST },
 	{ "skillfish", ITEM_PARSE_SKILLFISH },
+	{ "skillmining", ITEM_PARSE_SKILLMINING },
 	{ "skillshield", ITEM_PARSE_SKILLSHIELD },
 	{ "skillfist", ITEM_PARSE_SKILLFIST },
 	{ "criticalhitchance", ITEM_PARSE_CRITICALHITCHANCE },

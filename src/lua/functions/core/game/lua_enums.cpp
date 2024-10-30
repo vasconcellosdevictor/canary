@@ -380,6 +380,7 @@ void LuaEnums::initConditionParamEnums(lua_State* L) {
 	registerEnum(L, CONDITION_PARAM_SKILL_DISTANCE);
 	registerEnum(L, CONDITION_PARAM_SKILL_SHIELD);
 	registerEnum(L, CONDITION_PARAM_SKILL_FISHING);
+	registerEnum(L, CONDITION_PARAM_SKILL_MINING);
 	registerEnum(L, CONDITION_PARAM_SKILL_CRITICAL_HIT_CHANCE);
 	registerEnum(L, CONDITION_PARAM_SKILL_CRITICAL_HIT_DAMAGE);
 	registerEnum(L, CONDITION_PARAM_SKILL_LIFE_LEECH_CHANCE);
@@ -401,6 +402,7 @@ void LuaEnums::initConditionParamEnums(lua_State* L) {
 	registerEnum(L, CONDITION_PARAM_SKILL_DISTANCEPERCENT);
 	registerEnum(L, CONDITION_PARAM_SKILL_SHIELDPERCENT);
 	registerEnum(L, CONDITION_PARAM_SKILL_FISHINGPERCENT);
+	registerEnum(L, CONDITION_PARAM_SKILL_MININGPERCENT);
 	registerEnum(L, CONDITION_PARAM_BUFF_SPELL);
 	registerEnum(L, CONDITION_PARAM_SUBID);
 	registerEnum(L, CONDITION_PARAM_FIELD);
@@ -965,6 +967,7 @@ void LuaEnums::initSkillEnums(lua_State* L) {
 	registerEnum(L, SKILL_DISTANCE);
 	registerEnum(L, SKILL_SHIELD);
 	registerEnum(L, SKILL_FISHING);
+	registerEnum(L, SKILL_MINING);
 	registerEnum(L, SKILL_CRITICAL_HIT_CHANCE);
 	registerEnum(L, SKILL_CRITICAL_HIT_DAMAGE);
 	registerEnum(L, SKILL_LIFE_LEECH_CHANCE);

@@ -93,13 +93,14 @@ enum class HighscoreCategories_t : uint8_t {
 	DISTANCE_FIGHTING = 5,
 	SHIELDING = 6,
 	FISHING = 7,
-	MAGIC_LEVEL = 8,
-	LOYALTY = 9,
-	ACHIEVEMENTS = 10,
-	CHARMS = 11,
-	DROME = 12,
-	GOSHNAR = 13,
-	BOSS_POINTS = 14,
+	MINING = 8,
+	MAGIC_LEVEL = 9,
+	LOYALTY = 10,
+	ACHIEVEMENTS = 11,
+	CHARMS = 12,
+	DROME = 13,
+	GOSHNAR = 14,
+	BOSS_POINTS = 15,
 };
 
 enum HighscoreType_t : uint8_t {

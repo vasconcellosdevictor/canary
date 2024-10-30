@@ -965,6 +965,9 @@ std::string getSkillName(uint8_t skillid) {
 		case SKILL_FISHING:
 			return "fishing";
 
+		case SKILL_MINING:
+			return "mining";
+
 		case SKILL_CRITICAL_HIT_CHANCE:
 			return "critical hit chance";
 
@@ -1487,6 +1490,9 @@ const char* getReturnMessage(ReturnValue value) {
 		case RETURNVALUE_NOTENOUGHFISHLEVEL:
 			return "You do not have enough fishing level";
 
+		case RETURNVALUE_NOTENOUGHMININGLEVEL:
+			return "You do not have enough mining level";
+			
 		case RETURNVALUE_NOTPOSSIBLE:
 			return "Sorry, not possible.";
 

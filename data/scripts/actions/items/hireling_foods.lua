@@ -1,3 +1,4 @@
+
 local hasteCondition = Condition(CONDITION_HASTE)
 hasteCondition:setParameter(CONDITION_PARAM_TICKS, 60 * 60 * 1000)
 hasteCondition:setParameter(CONDITION_PARAM_SPEED, 80)
@@ -5,6 +6,10 @@ hasteCondition:setParameter(CONDITION_PARAM_SPEED, 80)
 local fishingCondition = Condition(CONDITION_ATTRIBUTES)
 fishingCondition:setParameter(CONDITION_PARAM_TICKS, 60 * 60 * 1000)
 fishingCondition:setParameter(CONDITION_PARAM_SKILL_FISHING, 30)
+
+local miningCondition = Condition(CONDITION_ATTRIBUTES)
+miningCondition:setParameter(CONDITION_PARAM_TICKS, 60 * 60 * 1000)
+miningCondition:setParameter(CONDITION_PARAM_SKILL_MINING, 30)
 
 local magicPointsCondition = Condition(CONDITION_ATTRIBUTES)
 magicPointsCondition:setParameter(CONDITION_PARAM_TICKS, 60 * 60 * 1000)

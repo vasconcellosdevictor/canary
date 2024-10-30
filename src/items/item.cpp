@@ -1238,7 +1238,7 @@ Item::getDescriptions(const ItemType &it, std::shared_ptr<Item> item /*= nullptr
 				skillBoost = true;
 			}
 
-			for (uint8_t i = SKILL_FIRST; i <= SKILL_FISHING; i++) {
+			for (uint8_t i = SKILL_FIRST; i <= SKILL_MINING; i++) {
 				if (!it.abilities->skills[i]) {
 					continue;
 				}
@@ -1646,7 +1646,7 @@ Item::getDescriptions(const ItemType &it, std::shared_ptr<Item> item /*= nullptr
 				skillBoost = true;
 			}
 
-			for (uint8_t i = SKILL_FIRST; i <= SKILL_FISHING; i++) {
+			for (uint8_t i = SKILL_FIRST; i <= SKILL_MINING; i++) {
 				if (!it.abilities->skills[i]) {
 					continue;
 				}
@@ -2098,7 +2098,7 @@ std::string Item::parseShowAttributesDescription(std::shared_ptr<Item> item, con
 		}
 
 		if (itemType.abilities) {
-			for (uint8_t i = SKILL_FIRST; i <= SKILL_FISHING; i++) {
+			for (uint8_t i = SKILL_FIRST; i <= SKILL_MINING; i++) {
 				if (!itemType.abilities->skills[i]) {
 					continue;
 				}
@@ -2396,7 +2396,7 @@ std::string Item::getDescription(const ItemType &it, int32_t lookDistance, std::
 			}
 
 			if (it.abilities) {
-				for (uint8_t i = SKILL_FIRST; i <= SKILL_FISHING; i++) {
+				for (uint8_t i = SKILL_FIRST; i <= SKILL_MINING; i++) {
 					if (!it.abilities->skills[i]) {
 						continue;
 					}
@@ -2664,7 +2664,7 @@ std::string Item::getDescription(const ItemType &it, int32_t lookDistance, std::
 			}
 
 			if (it.abilities) {
-				for (uint8_t i = SKILL_FIRST; i <= SKILL_FISHING; i++) {
+				for (uint8_t i = SKILL_FIRST; i <= SKILL_MINING; i++) {
 					if (!it.abilities->skills[i]) {
 						continue;
 					}

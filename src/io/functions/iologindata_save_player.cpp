@@ -279,6 +279,8 @@ bool IOLoginDataSave::savePlayerFirst(std::shared_ptr<Player> player) {
 	query << "`skill_shielding_tries` = " << player->skills[SKILL_SHIELD].tries << ",";
 	query << "`skill_fishing` = " << player->skills[SKILL_FISHING].level << ",";
 	query << "`skill_fishing_tries` = " << player->skills[SKILL_FISHING].tries << ",";
+	query << "`skill_mining` = " << player->skills[SKILL_MINING].level << ",";
+	query << "`skill_mining_tries` = " << player->skills[SKILL_MINING].tries << ",";
 	query << "`skill_critical_hit_chance` = " << player->skills[SKILL_CRITICAL_HIT_CHANCE].level << ",";
 	query << "`skill_critical_hit_chance_tries` = " << player->skills[SKILL_CRITICAL_HIT_CHANCE].tries << ",";
 	query << "`skill_critical_hit_damage` = " << player->skills[SKILL_CRITICAL_HIT_DAMAGE].level << ",";

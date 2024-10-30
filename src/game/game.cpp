@@ -342,6 +342,7 @@ Game::Game() {
 		{ static_cast<uint8_t>(HighscoreCategories_t::DISTANCE_FIGHTING), "Distance Fighting" },
 		{ static_cast<uint8_t>(HighscoreCategories_t::DROME), "Drome Score" },
 		{ static_cast<uint8_t>(HighscoreCategories_t::EXPERIENCE), "Experience Points" },
+		{ static_cast<uint8_t>(HighscoreCategories_t::MINING), "Mining" },
 		{ static_cast<uint8_t>(HighscoreCategories_t::FISHING), "Fishing" },
 		{ static_cast<uint8_t>(HighscoreCategories_t::FIST_FIGHTING), "Fist Fighting" },
 		{ static_cast<uint8_t>(HighscoreCategories_t::GOSHNAR), "Goshnar's Taint" },
@@ -359,6 +360,7 @@ Game::Game() {
 		HighscoreCategory("Axe Fighting", static_cast<uint8_t>(HighscoreCategories_t::AXE_FIGHTING)),
 		HighscoreCategory("Distance Fighting", static_cast<uint8_t>(HighscoreCategories_t::DISTANCE_FIGHTING)),
 		HighscoreCategory("Shielding", static_cast<uint8_t>(HighscoreCategories_t::SHIELDING)),
+		HighscoreCategory("Mining", static_cast<uint8_t>(HighscoreCategories_t::MINING)),
 		HighscoreCategory("Fishing", static_cast<uint8_t>(HighscoreCategories_t::FISHING)),
 		HighscoreCategory("Magic Level", static_cast<uint8_t>(HighscoreCategories_t::MAGIC_LEVEL))
 	};
@@ -8614,6 +8616,8 @@ std::string Game::getSkillNameById(uint8_t &skill) {
 			return "skill_dist";
 		case HighscoreCategories_t::SHIELDING:
 			return "skill_shielding";
+		case HighscoreCategories_t::MINING:
+			return "skill_mining";
 		case HighscoreCategories_t::FISHING:
 			return "skill_fishing";
 		case HighscoreCategories_t::MAGIC_LEVEL:
