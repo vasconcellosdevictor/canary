@@ -3,16 +3,18 @@ local function getSkillId(skillName)
 		return SKILL_CLUB
 	elseif skillName == "sword" then
 		return SKILL_SWORD
+	elseif skillName == "magic" then
+		return SKILL_MAGLEVEL		
 	elseif skillName == "axe" then
 		return SKILL_AXE
 	elseif skillName:sub(1, 4) == "dist" then
 		return SKILL_DISTANCE
 	elseif skillName:sub(1, 6) == "shield" then
 		return SKILL_SHIELD
-	elseif skillName:sub(1, 4) == "mining" then
-		return SKILL_MINING
 	elseif skillName:sub(1, 4) == "fish" then
 		return SKILL_FISHING
+	elseif skillName:sub(1, 4) == "mining" then
+		return SKILL_MINING		
 	else
 		return SKILL_FIST
 	end

@@ -665,7 +665,7 @@ uint16_t Player::getLoyaltySkill(skills_t skill) const {
 	}
 	return level;
 }
-
+/*XXXXX*/
 void Player::addSkillAdvance(skills_t skill, uint64_t count) {
 	uint64_t currReqTries = vocation->getReqSkillTries(skill, skills[skill].level);
 	uint64_t nextReqTries = vocation->getReqSkillTries(skill, skills[skill].level + 1);
