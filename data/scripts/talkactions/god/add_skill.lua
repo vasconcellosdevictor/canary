@@ -4,7 +4,7 @@ local function getSkillId(skillName)
 	elseif skillName == "sword" then
 		return SKILL_SWORD
 	elseif skillName == "magic" then
-		return SKILL_MAGLEVEL		
+		return SKILL_MAGLEVEL
 	elseif skillName == "axe" then
 		return SKILL_AXE
 	elseif skillName:sub(1, 4) == "dist" then
@@ -14,7 +14,7 @@ local function getSkillId(skillName)
 	elseif skillName:sub(1, 4) == "fish" then
 		return SKILL_FISHING
 	elseif skillName:sub(1, 4) == "mining" then
-		return SKILL_MINING		
+		return SKILL_MINING
 	else
 		return SKILL_FIST
 	end
