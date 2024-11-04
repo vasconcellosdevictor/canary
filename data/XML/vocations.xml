@@ -91,7 +91,7 @@
 		<skill id="6" multiplier="1.1" />
 		<skill id="7" multiplier="1.1" />
 	</vocation>
-	<vocation id="10" clientid="0" baseid="6" name="Paladin" description="a paladin" magicshield="0" gaincap="20" gainhp="10" gainmana="15" gainhpticks="8000" gainhpamount="1" gainmanaticks="4000" gainmanaamount="2" manamultiplier="1.4" attackspeed="2000" basespeed="110" soulmax="100" gainsoulticks="120000" fromvoc="10" avatarlooktype="1594">
+	<vocation id="10" clientid="0" baseid="6" name="Archer" description="an archer" magicshield="0" gaincap="20" gainhp="10" gainmana="15" gainhpticks="8000" gainhpamount="1" gainmanaticks="4000" gainmanaamount="2" manamultiplier="1.4" attackspeed="2000" basespeed="110" soulmax="100" gainsoulticks="120000" fromvoc="10" avatarlooktype="1594">
 		<formula meleeDamage="1.0" distDamage="1.0" defense="1.0" armor="1.0" />
 		<mitigation multiplier="1.28" primaryShield="2.08" secondaryShield="1.2" />
 		<pvp damageReceivedMultiplier="1.0" damageDealtMultiplier ="1.0"/>
