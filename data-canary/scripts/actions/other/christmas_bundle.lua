@@ -1,40 +1,7 @@
-local setting = { -- [christmas bundle item id] = {{reward item id, count}, ...}
-	[6506] = { -- red bundle
-		{ 6569, 15 }, -- candy
-		{ 3585, 5 }, -- red apple
-		{ 3586, 10 }, -- orange
-		{ 3598, 20 }, -- cookie
-		{ 3599, 10 }, -- candy cane
-		6500, -- gingerbreadman
-		6501, -- christmas wreath
-		6489, -- christmas branch
-		6503, -- red christmas garland
-		6387, -- christmas card
-	},
-	[6507] = { -- blue bundle
-		{ 6569, 15 }, -- candy
-		{ 3585, 5 }, -- red apple
-		{ 3586, 10 }, -- orange
-		{ 3598, 20 }, -- cookie
-		{ 3599, 10 }, -- candy cane
-		6500, -- gingerbreadman
-		6501, -- christmas wreath
-		6489, -- christmas branch
-		6505, -- blue christmas garland
-		6387, -- christmas card
-	},
-	[6508] = { -- green bundle
-		{ 6569, 15 }, -- candy
-		{ 3585, 5 }, -- red apple
-		{ 3586, 10 }, -- orange
-		{ 3598, 20 }, -- cookie
-		{ 3599, 10 }, -- candy cane
-		6500, -- gingerbreadman
-		6501, -- christmas wreath
-		6489, -- christmas branch
-		6502, -- christmas garland
-		6387, -- christmas card
-	},
+local setting = {
+	[6506] = { { 6569, 15 }, { 3585, 5 }, { 3586, 10 }, { 3598, 20 }, { 3599, 10 }, 6500, 6501, 6489, 6503, 6387 }, -- red bundle
+	[6507] = { { 6569, 15 }, { 3585, 5 }, { 3586, 10 }, { 3598, 20 }, { 3599, 10 }, 6500, 6501, 6489, 6505, 6387 }, -- blue bundle
+	[6508] = { { 6569, 15 }, { 3585, 5 }, { 3586, 10 }, { 3598, 20 }, { 3599, 10 }, 6500, 6501, 6489, 6502, 6387 }, -- green bundle
 }
 
 local christmasBundle = Action()
@@ -47,26 +14,29 @@ function christmasBundle.onUse(player, item, fromPosition, target, toPosition, i
 
 	local rewards = {}
 	while #rewards < 7 do
+		local randIndex = math.random(#targetItem)
+		local gift = targetItem[randIndex]
+
 		local count = 1
-		local rand = math.random(#targetItem)
-		local gift = targetItem[rand]
 		if type(gift) == "table" then
 			gift, count = unpack(gift)
 		end
+
 		rewards[#rewards + 1] = { gift, count }
-		table.remove(targetItem, rand)
+		table.remove(targetItem, randIndex)
 	end
 
-	for i = 1, #rewards do
-		player:addItem(unpack(rewards[i]))
+	for _, reward in ipairs(rewards) do
+		player:addItem(unpack(reward))
 	end
-	item:remove(1)
+
 	player:getPosition():sendMagicEffect(CONST_ME_GIFT_WRAPS)
+	item:remove(1)
 	return true
 end
 
-for index, value in pairs(setting) do
-	christmasBundle:id(index)
+for itemId in pairs(setting) do
+	christmasBundle:id(itemId)
 end
 
 christmasBundle:register()

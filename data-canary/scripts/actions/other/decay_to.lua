@@ -1,5 +1,9 @@
-local setting = {
-	--[itemid] = decayto
+local voices = {
+	[23708] = "Au au!",
+	[23443] = "Grooaarr!",
+}
+
+local transformItems = {
 	[2062] = 2063,
 	[2063] = 2062, -- sacred statue
 	[2064] = 2065,
@@ -439,16 +443,69 @@ local setting = {
 	[39700] = 39699, -- rainbow torch
 	[39701] = 39702,
 	[39702] = 39701, -- rainbow torch
+	[39757] = 39758, -- yeti doll
+	[39759] = 39760,
+	[39761] = 39762, -- the gods' twilight doll
+	[39772] = 39773,
+	[39773] = 39774, -- flower table
+	[39774] = 39772, -- flower table
+	[39793] = 39794,
+	[39794] = 39793, -- turquoise flower lamp
+	[39795] = 39796,
+	[39796] = 39795, -- purple flower lamp
+	[39801] = 39802,
+	[39802] = 39801, -- wall leaves
+	[39803] = 39804,
+	[39804] = 39803, -- tendrils
+	[39805] = 39806,
+	[39807] = 39808, -- water nymph
+	[39810] = 39809, -- water nymph
+	[42271] = 42272,
+	[42272] = 42271, -- seafarer table
+	[42291] = 42292,
+	[42292] = 42291, -- seashell lamp
+	[42293] = 42294,
+	[42294] = 42293, -- seashell lamp
+	[42295] = 42296,
+	[42296] = 42295, -- tentacle lamp
+	[42297] = 42298,
+	[42298] = 42297, -- tentacle lamp
+	[42299] = 42300,
+	[42300] = 42299, -- sea-devil wall lamp
+	[42301] = 42302,
+	[42302] = 42301, -- seafood bucket
+	[42324] = 42326,
+	[42326] = 42324, -- opulent table
+	[42325] = 42327,
+	[42327] = 42325, -- opulent table
+	[42346] = 42347,
+	[42347] = 42346, -- opulent floor lamp
+	[42348] = 42349,
+	[42349] = 42348, -- opulent floor lamp
+	[42363] = 42364, -- djinn lamp
+	[42365] = 42366, -- djinn lamp
 }
 
 local decayTo = Action()
 
 function decayTo.onUse(player, item, fromPosition, target, toPosition, isHotkey)
-	item:transform(setting[item.itemid])
+	local itemId = item:getId()
+	if voices[itemId] then
+		local spectators = Game.getSpectators(fromPosition, false, true, 3, 3)
+		for _, spectator in ipairs(spectators) do
+			player:say(voices[itemId], TALKTYPE_MONSTER_SAY, false, spectator, fromPosition)
+		end
+	end
+
+	local newItemId = transformItems[itemId]
+	if newItemId then
+		item:transform(newItemId)
+		item:decay()
+	end
 	return true
 end
 
-for index, value in pairs(setting) do
+for index in pairs(transformItems) do
 	decayTo:id(index)
 end
 
