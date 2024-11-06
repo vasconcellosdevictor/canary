@@ -204,6 +204,7 @@ bool Imbuements::loadFromXml(bool /* reloading */) {
 							skillId = SKILL_DISTANCE;
 						} else if (tmpStrValue == "fish") {
 							skillId = SKILL_FISHING;
+						/*XXXXX ADICIONAR SKILLS DE 8 A 21*/	
 						} else if (tmpStrValue == "mining") {
 							skillId = SKILL_MINING;
 						} else if (tmpStrValue == "shield") {

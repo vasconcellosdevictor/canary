@@ -221,7 +221,7 @@ uint16_t Vocations::getPromotedVocation(uint16_t vocationId) const {
 	return VOCATION_NONE;
 }
 
-uint32_t Vocation::skillBase[SKILL_LAST + 1] = { 50, 50, 50, 50, 30, 100, 20, 20 };
+uint32_t Vocation::skillBase[SKILL_LAST + 1] = { 50, 50, 50, 50, 30, 100, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20 };
 const uint16_t minSkillLevel = 10;
 
 absl::uint128 Vocation::getTotalSkillTries(uint8_t skill, uint16_t level) {

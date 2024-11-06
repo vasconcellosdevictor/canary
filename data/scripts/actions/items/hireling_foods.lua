@@ -9,7 +9,7 @@ fishingCondition:setParameter(CONDITION_PARAM_SKILL_FISHING, 30)
 local miningCondition = Condition(CONDITION_ATTRIBUTES)
 miningCondition:setParameter(CONDITION_PARAM_TICKS, 60 * 60 * 1000)
 miningCondition:setParameter(CONDITION_PARAM_SKILL_MINING, 30)
-
+--XXXXX ADICIONAR COMIDAS PARA NOVAS SKILLS DE 8 A 21
 local magicPointsCondition = Condition(CONDITION_ATTRIBUTES)
 magicPointsCondition:setParameter(CONDITION_PARAM_TICKS, 60 * 60 * 1000)
 magicPointsCondition:setParameter(CONDITION_PARAM_STAT_MAGICPOINTS, 3)
