@@ -356,7 +356,7 @@ Game::Game() {
 		{ static_cast<uint8_t>(HighscoreCategories_t::ALCHEMY), "Alchemy" },
 		{ static_cast<uint8_t>(HighscoreCategories_t::ARCHAEOLOGY), "Archaeology" },
 		{ static_cast<uint8_t>(HighscoreCategories_t::MUSIC), "Music" },
-		{ static_cast<uint8_t>(HighscoreCategories_t::WISDOM), "Wisdom" },	
+		{ static_cast<uint8_t>(HighscoreCategories_t::WISDOM), "Wisdom" },
 		{ static_cast<uint8_t>(HighscoreCategories_t::FISHING), "Fishing" },
 		{ static_cast<uint8_t>(HighscoreCategories_t::FIST_FIGHTING), "Fist Fighting" },
 		{ static_cast<uint8_t>(HighscoreCategories_t::GOSHNAR), "Goshnar's Taint" },
@@ -8673,7 +8673,7 @@ std::string Game::getSkillNameById(uint8_t &skill) {
 		case HighscoreCategories_t::MUSIC:
 			return "skill_music";
 		case HighscoreCategories_t::WISDOM:
-			return "skill_wisdom";								
+			return "skill_wisdom";
 		case HighscoreCategories_t::FISHING:
 			return "skill_fishing";
 		case HighscoreCategories_t::MAGIC_LEVEL:
