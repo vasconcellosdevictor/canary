@@ -1,10 +1,10 @@
-local mType = Game.createMonsterType("Wolf")
+local mType = Game.createMonsterType("Tiger")
 local monster = {}
 
-monster.description = "a wolf"
-monster.experience = 18
+monster.description = "a tiger"
+monster.experience = 40
 monster.outfit = {
-	lookType = 27,
+	lookType = 125,
 	lookHead = 0,
 	lookBody = 0,
 	lookLegs = 0,
@@ -13,25 +13,26 @@ monster.outfit = {
 	lookMount = 0,
 }
 
-monster.raceId = 27
+monster.raceId = 125
 monster.Bestiary = {
 	class = "Mammal",
 	race = BESTY_RACE_MAMMAL,
-	toKill = 250,
-	FirstUnlock = 10,
-	SecondUnlock = 100,
-	CharmsPoints = 5,
-	Stars = 1,
+	toKill = 500,
+	FirstUnlock = 25,
+	SecondUnlock = 250,
+	CharmsPoints = 15,
+	Stars = 2,
 	Occurrence = 0,
-	Locations = "In almost all grass areas in Tibia, also found in Rookgaard and Dawnport.",
+	Locations = "Tiquanda, Meriana, Arena and Zoo Quarter. Three unreachable ones are found in the Rookgaard Academy, \z
+		below Ankrahmun (during the Nomads Land Quest), and on Charles's ship.",
 }
 
-monster.health = 25
-monster.maxHealth = 25
+monster.health = 75
+monster.maxHealth = 75
 monster.race = "blood"
-monster.corpse = 5968
-monster.speed = 82
-monster.manaCost = 255
+monster.corpse = 6051
+monster.speed = 100
+monster.manaCost = 420
 
 monster.changeTarget = {
 	interval = 4000,
@@ -39,7 +40,8 @@ monster.changeTarget = {
 }
 
 monster.strategiesTarget = {
-	nearest = 100,
+	nearest = 70,
+	damage = 30,
 }
 
 monster.flags = {
@@ -47,14 +49,14 @@ monster.flags = {
 	attackable = true,
 	hostile = true,
 	convinceable = true,
-	pushable = true,
+	pushable = false,
 	rewardBoss = false,
 	illusionable = true,
-	canPushItems = false,
-	canPushCreatures = false,
-	staticAttackChance = 90,
+	canPushItems = true,
+	canPushCreatures = true,
+	staticAttackChance = 70,
 	targetDistance = 1,
-	runHealth = 8,
+	runHealth = 0,
 	healthHidden = false,
 	isBlockable = false,
 	canWalkOnEnergy = false,
@@ -70,23 +72,22 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Yoooohhuuuu!", yell = false },
-	{ text = "Grrrrrrr", yell = false },
 }
 
 monster.loot = {
-	{ name = "meat", chance = 55000, maxCount = 2 },
-	{ name = "wolf paw", chance = 980 },
+	{ name = "meat", chance = 35190, maxCount = 4 },
+	{ name = "striped fur", chance = 10830 },
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -20 },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -40 },
 }
 
 monster.defenses = {
-	defense = 5,
-	armor = 1,
-	mitigation = 0.10,
+	defense = 15,
+	armor = 5,
+	mitigation = 0.38,
+	{ name = "speed", interval = 2000, chance = 15, speedChange = 200, effect = CONST_ME_MAGIC_RED, target = false, duration = 5000 },
 }
 
 monster.elements = {
@@ -98,8 +99,8 @@ monster.elements = {
 	{ type = COMBAT_MANADRAIN, percent = 0 },
 	{ type = COMBAT_DROWNDAMAGE, percent = 0 },
 	{ type = COMBAT_ICEDAMAGE, percent = -10 },
-	{ type = COMBAT_HOLYDAMAGE, percent = 30 },
-	{ type = COMBAT_DEATHDAMAGE, percent = -5 },
+	{ type = COMBAT_HOLYDAMAGE, percent = 0 },
+	{ type = COMBAT_DEATHDAMAGE, percent = -10 },
 }
 
 monster.immunities = {

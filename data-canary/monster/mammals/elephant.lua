@@ -1,10 +1,10 @@
-local mType = Game.createMonsterType("Winter Wolf")
+local mType = Game.createMonsterType("Elephant")
 local monster = {}
 
-monster.description = "a winter wolf"
-monster.experience = 20
+monster.description = "an elephant"
+monster.experience = 160
 monster.outfit = {
-	lookType = 52,
+	lookType = 211,
 	lookHead = 0,
 	lookBody = 0,
 	lookLegs = 0,
@@ -13,33 +13,35 @@ monster.outfit = {
 	lookMount = 0,
 }
 
-monster.raceId = 52
+monster.raceId = 211
 monster.Bestiary = {
 	class = "Mammal",
 	race = BESTY_RACE_MAMMAL,
-	toKill = 250,
-	FirstUnlock = 10,
-	SecondUnlock = 100,
-	CharmsPoints = 5,
-	Stars = 1,
+	toKill = 500,
+	FirstUnlock = 25,
+	SecondUnlock = 250,
+	CharmsPoints = 15,
+	Stars = 2,
 	Occurrence = 0,
-	Locations = "Ice Islands.",
+	Locations = "East of Port Hope close to Grizzly Adams, deep in the jungle, \z
+		Arena and Zoo Quarter, Mammoth Shearing Factory.",
 }
 
-monster.health = 30
-monster.maxHealth = 30
+monster.health = 320
+monster.maxHealth = 320
 monster.race = "blood"
-monster.corpse = 5997
-monster.speed = 85
-monster.manaCost = 260
+monster.corpse = 6052
+monster.speed = 95
+monster.manaCost = 500
 
 monster.changeTarget = {
 	interval = 4000,
-	chance = 0,
+	chance = 10,
 }
 
 monster.strategiesTarget = {
-	nearest = 100,
+	nearest = 70,
+	damage = 30,
 }
 
 monster.flags = {
@@ -51,7 +53,7 @@ monster.flags = {
 	rewardBoss = false,
 	illusionable = true,
 	canPushItems = true,
-	canPushCreatures = false,
+	canPushCreatures = true,
 	staticAttackChance = 90,
 	targetDistance = 1,
 	runHealth = 0,
@@ -70,35 +72,39 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Yoooohhuuuu!", yell = false },
+	{ text = "Hooooot-Toooooot!", yell = false },
+	{ text = "Tooooot!", yell = false },
+	{ text = "Trooooot!", yell = false },
 }
 
 monster.loot = {
-	{ name = "meat", chance = 30000, maxCount = 2 },
-	{ name = "winter wolf fur", chance = 10000 },
+	{ name = "meat", chance = 39000, maxCount = 4 },
+	{ name = "ham", chance = 30000, maxCount = 3 },
+	{ name = "tusk", chance = 1000, maxCount = 2 },
+	{ name = "tusk shield", chance = 140 },
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -20 },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -100 },
 }
 
 monster.defenses = {
-	defense = 5,
-	armor = 2,
-	mitigation = 0.15,
+	defense = 25,
+	armor = 20,
+	mitigation = 0.41,
 }
 
 monster.elements = {
-	{ type = COMBAT_PHYSICALDAMAGE, percent = 0 },
-	{ type = COMBAT_ENERGYDAMAGE, percent = -5 },
+	{ type = COMBAT_PHYSICALDAMAGE, percent = 25 },
+	{ type = COMBAT_ENERGYDAMAGE, percent = -10 },
 	{ type = COMBAT_EARTHDAMAGE, percent = 0 },
-	{ type = COMBAT_FIREDAMAGE, percent = 10 },
+	{ type = COMBAT_FIREDAMAGE, percent = 0 },
 	{ type = COMBAT_LIFEDRAIN, percent = 0 },
 	{ type = COMBAT_MANADRAIN, percent = 0 },
 	{ type = COMBAT_DROWNDAMAGE, percent = 0 },
 	{ type = COMBAT_ICEDAMAGE, percent = 20 },
-	{ type = COMBAT_HOLYDAMAGE, percent = 10 },
-	{ type = COMBAT_DEATHDAMAGE, percent = -10 },
+	{ type = COMBAT_HOLYDAMAGE, percent = 0 },
+	{ type = COMBAT_DEATHDAMAGE, percent = 0 },
 }
 
 monster.immunities = {

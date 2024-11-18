@@ -1,10 +1,10 @@
-local mType = Game.createMonsterType("Wolf")
+local mType = Game.createMonsterType("Silver Rabbit")
 local monster = {}
 
-monster.description = "a wolf"
-monster.experience = 18
+monster.description = "a silver rabbit"
+monster.experience = 0
 monster.outfit = {
-	lookType = 27,
+	lookType = 262,
 	lookHead = 0,
 	lookBody = 0,
 	lookLegs = 0,
@@ -13,7 +13,7 @@ monster.outfit = {
 	lookMount = 0,
 }
 
-monster.raceId = 27
+monster.raceId = 327
 monster.Bestiary = {
 	class = "Mammal",
 	race = BESTY_RACE_MAMMAL,
@@ -23,15 +23,15 @@ monster.Bestiary = {
 	CharmsPoints = 5,
 	Stars = 1,
 	Occurrence = 0,
-	Locations = "In almost all grass areas in Tibia, also found in Rookgaard and Dawnport.",
+	Locations = "A lot of places on the Ice Islands and one on Rookgaard (unreachable).",
 }
 
-monster.health = 25
-monster.maxHealth = 25
+monster.health = 15
+monster.maxHealth = 15
 monster.race = "blood"
-monster.corpse = 5968
-monster.speed = 82
-monster.manaCost = 255
+monster.corpse = 7338
+monster.speed = 92
+monster.manaCost = 220
 
 monster.changeTarget = {
 	interval = 4000,
@@ -47,19 +47,20 @@ monster.flags = {
 	attackable = true,
 	hostile = true,
 	convinceable = true,
-	pushable = true,
+	pushable = false,
 	rewardBoss = false,
 	illusionable = true,
-	canPushItems = false,
+	canPushItems = true,
 	canPushCreatures = false,
-	staticAttackChance = 90,
+	staticAttackChance = 70,
 	targetDistance = 1,
-	runHealth = 8,
+	runHealth = 15,
 	healthHidden = false,
 	isBlockable = false,
 	canWalkOnEnergy = false,
 	canWalkOnFire = false,
 	canWalkOnPoison = false,
+	isPreyExclusive = true,
 }
 
 monster.light = {
@@ -70,23 +71,18 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Yoooohhuuuu!", yell = false },
-	{ text = "Grrrrrrr", yell = false },
 }
 
 monster.loot = {
-	{ name = "meat", chance = 55000, maxCount = 2 },
-	{ name = "wolf paw", chance = 980 },
-}
-
-monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -20 },
+	{ name = "meat", chance = 86170, maxCount = 2 },
+	{ id = 3595, chance = 11150 }, -- carrot
+	{ name = "silky fur", chance = 28670 },
 }
 
 monster.defenses = {
 	defense = 5,
 	armor = 1,
-	mitigation = 0.10,
+	mitigation = 0.05,
 }
 
 monster.elements = {
@@ -97,9 +93,9 @@ monster.elements = {
 	{ type = COMBAT_LIFEDRAIN, percent = 0 },
 	{ type = COMBAT_MANADRAIN, percent = 0 },
 	{ type = COMBAT_DROWNDAMAGE, percent = 0 },
-	{ type = COMBAT_ICEDAMAGE, percent = -10 },
-	{ type = COMBAT_HOLYDAMAGE, percent = 30 },
-	{ type = COMBAT_DEATHDAMAGE, percent = -5 },
+	{ type = COMBAT_ICEDAMAGE, percent = 0 },
+	{ type = COMBAT_HOLYDAMAGE, percent = 0 },
+	{ type = COMBAT_DEATHDAMAGE, percent = 0 },
 }
 
 monster.immunities = {

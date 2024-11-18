@@ -1,10 +1,10 @@
-local mType = Game.createMonsterType("Wolf")
+local mType = Game.createMonsterType("Pig")
 local monster = {}
 
-monster.description = "a wolf"
-monster.experience = 18
+monster.description = "a pig"
+monster.experience = 0
 monster.outfit = {
-	lookType = 27,
+	lookType = 60,
 	lookHead = 0,
 	lookBody = 0,
 	lookLegs = 0,
@@ -13,7 +13,7 @@ monster.outfit = {
 	lookMount = 0,
 }
 
-monster.raceId = 27
+monster.raceId = 60
 monster.Bestiary = {
 	class = "Mammal",
 	race = BESTY_RACE_MAMMAL,
@@ -23,14 +23,14 @@ monster.Bestiary = {
 	CharmsPoints = 5,
 	Stars = 1,
 	Occurrence = 0,
-	Locations = "In almost all grass areas in Tibia, also found in Rookgaard and Dawnport.",
+	Locations = "Rookgaard, Orc Fort, under Femor Hills with Goblins, some farms like Donald McRonaldThe McRonalds Farm, Liberty Bay slums and Nargor, Foreigner Quarter in Yalahar, Isle of the Kings, cells in The Pits of Inferno QuestTafariels throneroom in Pits of Inferno, Gardens of Night Mapper Coords129.18126.125104texthere, unreachable.",
 }
 
 monster.health = 25
 monster.maxHealth = 25
 monster.race = "blood"
-monster.corpse = 5968
-monster.speed = 82
+monster.corpse = 6000
+monster.speed = 57
 monster.manaCost = 255
 
 monster.changeTarget = {
@@ -45,7 +45,7 @@ monster.strategiesTarget = {
 monster.flags = {
 	summonable = true,
 	attackable = true,
-	hostile = true,
+	hostile = false,
 	convinceable = true,
 	pushable = true,
 	rewardBoss = false,
@@ -54,12 +54,13 @@ monster.flags = {
 	canPushCreatures = false,
 	staticAttackChance = 90,
 	targetDistance = 1,
-	runHealth = 8,
+	runHealth = 25,
 	healthHidden = false,
 	isBlockable = false,
 	canWalkOnEnergy = false,
 	canWalkOnFire = false,
 	canWalkOnPoison = false,
+	isPreyExclusive = true,
 }
 
 monster.light = {
@@ -70,23 +71,19 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Yoooohhuuuu!", yell = false },
-	{ text = "Grrrrrrr", yell = false },
+	{ text = "Oink oink", yell = false },
+	{ text = "Oink", yell = false },
 }
 
 monster.loot = {
-	{ name = "meat", chance = 55000, maxCount = 2 },
-	{ name = "wolf paw", chance = 980 },
-}
-
-monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -20 },
+	{ name = "meat", chance = 64000, maxCount = 4 },
+	{ name = "pig foot", chance = 950 },
 }
 
 monster.defenses = {
 	defense = 5,
-	armor = 1,
-	mitigation = 0.10,
+	armor = 2,
+	mitigation = 0.05,
 }
 
 monster.elements = {
@@ -97,9 +94,9 @@ monster.elements = {
 	{ type = COMBAT_LIFEDRAIN, percent = 0 },
 	{ type = COMBAT_MANADRAIN, percent = 0 },
 	{ type = COMBAT_DROWNDAMAGE, percent = 0 },
-	{ type = COMBAT_ICEDAMAGE, percent = -10 },
-	{ type = COMBAT_HOLYDAMAGE, percent = 30 },
-	{ type = COMBAT_DEATHDAMAGE, percent = -5 },
+	{ type = COMBAT_ICEDAMAGE, percent = 0 },
+	{ type = COMBAT_HOLYDAMAGE, percent = 0 },
+	{ type = COMBAT_DEATHDAMAGE, percent = 0 },
 }
 
 monster.immunities = {

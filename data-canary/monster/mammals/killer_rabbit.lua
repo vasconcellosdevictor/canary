@@ -1,10 +1,10 @@
-local mType = Game.createMonsterType("Cave Rat")
+local mType = Game.createMonsterType("Killer Rabbit")
 local monster = {}
 
-monster.description = "a cave rat"
-monster.experience = 10
+monster.description = "a killer rabbit"
+monster.experience = 160
 monster.outfit = {
-	lookType = 56,
+	lookType = 74,
 	lookHead = 0,
 	lookBody = 0,
 	lookLegs = 0,
@@ -13,31 +13,29 @@ monster.outfit = {
 	lookMount = 0,
 }
 
-monster.raceId = 56
+monster.raceId = 560
 monster.Bestiary = {
 	class = "Mammal",
 	race = BESTY_RACE_MAMMAL,
-	toKill = 250,
-	FirstUnlock = 10,
-	SecondUnlock = 100,
-	CharmsPoints = 5,
-	Stars = 1,
-	Occurrence = 0,
-	Locations = "Almost everywhere in tibia, they seem to have a nest-like place in Greenshore, \z
-		a semi-large spawn at the entrance to the Port Hope troll cave and in cave near Ankrahmun ship. \z
-		Also appears in Rat Plague in Thais and Rat Plague in Rookgaard.",
+	toKill = 500,
+	FirstUnlock = 25,
+	SecondUnlock = 250,
+	CharmsPoints = 15,
+	Stars = 2,
+	Occurrence = 1,
+	Locations = "Isle of Evil.",
 }
 
-monster.health = 30
-monster.maxHealth = 30
+monster.health = 205
+monster.maxHealth = 205
 monster.race = "blood"
-monster.corpse = 5964
-monster.speed = 75
-monster.manaCost = 250
+monster.corpse = 6017
+monster.speed = 170
+monster.manaCost = 0
 
 monster.changeTarget = {
-	interval = 4000,
-	chance = 0,
+	interval = 5000,
+	chance = 20,
 }
 
 monster.strategiesTarget = {
@@ -45,23 +43,24 @@ monster.strategiesTarget = {
 }
 
 monster.flags = {
-	summonable = true,
+	summonable = false,
 	attackable = true,
 	hostile = true,
-	convinceable = true,
+	convinceable = false,
 	pushable = true,
 	rewardBoss = false,
-	illusionable = true,
-	canPushItems = false,
-	canPushCreatures = false,
+	illusionable = false,
+	canPushItems = true,
+	canPushCreatures = true,
 	staticAttackChance = 90,
 	targetDistance = 1,
-	runHealth = 3,
+	runHealth = 0,
 	healthHidden = false,
 	isBlockable = false,
 	canWalkOnEnergy = false,
 	canWalkOnFire = false,
 	canWalkOnPoison = false,
+	isPreyExclusive = true,
 }
 
 monster.light = {
@@ -69,35 +68,41 @@ monster.light = {
 	color = 0,
 }
 
+monster.summon = {
+	maxSummons = 2,
+	summons = {
+		{ name = "killer rabbit", chance = 30, interval = 2000, count = 2 },
+	},
+}
+
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Meep!", yell = false },
-	{ text = "Meeeeep!", yell = false },
+	{ text = "Who is lunch NOW?", yell = false },
 }
 
 monster.loot = {
-	{ name = "gold coin", chance = 85000, maxCount = 2 },
-	{ name = "cookie", chance = 750 },
-	{ id = 3607, chance = 30000 }, -- cheese
-	{ name = "worm", chance = 9700, maxCount = 2 },
+	{ name = "gold coin", chance = 50000, maxCount = 90 },
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -10 },
+	{ name = "melee", interval = 1200, chance = 100, minDamage = 0, maxDamage = -100 },
+	{ name = "combat", interval = 2000, chance = 30, type = COMBAT_PHYSICALDAMAGE, minDamage = 0, maxDamage = -50, range = 1, target = false },
 }
 
 monster.defenses = {
-	defense = 5,
-	armor = 1,
-	mitigation = 0.10,
+	defense = 35,
+	armor = 17,
+	mitigation = 0.51,
+	{ name = "speed", interval = 1000, chance = 40, speedChange = 380, effect = CONST_ME_ENERGYHIT, target = false, duration = 8000 },
+	{ name = "invisible", interval = 2000, chance = 30, effect = CONST_ME_MAGIC_BLUE },
 }
 
 monster.elements = {
 	{ type = COMBAT_PHYSICALDAMAGE, percent = 0 },
 	{ type = COMBAT_ENERGYDAMAGE, percent = 0 },
 	{ type = COMBAT_EARTHDAMAGE, percent = 0 },
-	{ type = COMBAT_FIREDAMAGE, percent = -10 },
+	{ type = COMBAT_FIREDAMAGE, percent = 0 },
 	{ type = COMBAT_LIFEDRAIN, percent = 0 },
 	{ type = COMBAT_MANADRAIN, percent = 0 },
 	{ type = COMBAT_DROWNDAMAGE, percent = 0 },

@@ -1,10 +1,10 @@
-local mType = Game.createMonsterType("Wolf")
+local mType = Game.createMonsterType("Black Sheep")
 local monster = {}
 
-monster.description = "a wolf"
-monster.experience = 18
+monster.description = "a black sheep"
+monster.experience = 0
 monster.outfit = {
-	lookType = 27,
+	lookType = 13,
 	lookHead = 0,
 	lookBody = 0,
 	lookLegs = 0,
@@ -13,7 +13,7 @@ monster.outfit = {
 	lookMount = 0,
 }
 
-monster.raceId = 27
+monster.raceId = 13
 monster.Bestiary = {
 	class = "Mammal",
 	race = BESTY_RACE_MAMMAL,
@@ -23,19 +23,19 @@ monster.Bestiary = {
 	CharmsPoints = 5,
 	Stars = 1,
 	Occurrence = 0,
-	Locations = "In almost all grass areas in Tibia, also found in Rookgaard and Dawnport.",
+	Locations = "Femor Hills, cultist cave in Liberty Bay, Drefia.",
 }
 
-monster.health = 25
-monster.maxHealth = 25
+monster.health = 20
+monster.maxHealth = 20
 monster.race = "blood"
-monster.corpse = 5968
-monster.speed = 82
-monster.manaCost = 255
+monster.corpse = 5994
+monster.speed = 58
+monster.manaCost = 250
 
 monster.changeTarget = {
 	interval = 4000,
-	chance = 0,
+	chance = 20,
 }
 
 monster.strategiesTarget = {
@@ -45,21 +45,22 @@ monster.strategiesTarget = {
 monster.flags = {
 	summonable = true,
 	attackable = true,
-	hostile = true,
+	hostile = false,
 	convinceable = true,
-	pushable = true,
+	pushable = false,
 	rewardBoss = false,
 	illusionable = true,
-	canPushItems = false,
+	canPushItems = true,
 	canPushCreatures = false,
 	staticAttackChance = 90,
 	targetDistance = 1,
-	runHealth = 8,
+	runHealth = 20,
 	healthHidden = false,
 	isBlockable = false,
 	canWalkOnEnergy = false,
 	canWalkOnFire = false,
 	canWalkOnPoison = false,
+	isPreyExclusive = true,
 }
 
 monster.light = {
@@ -70,36 +71,31 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Yoooohhuuuu!", yell = false },
-	{ text = "Grrrrrrr", yell = false },
+	{ text = "Maeh", yell = false },
 }
 
 monster.loot = {
-	{ name = "meat", chance = 55000, maxCount = 2 },
-	{ name = "wolf paw", chance = 980 },
-}
-
-monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -20 },
+	{ name = "meat", chance = 70860, maxCount = 5 },
+	{ name = "black wool", chance = 1000 },
 }
 
 monster.defenses = {
 	defense = 5,
 	armor = 1,
-	mitigation = 0.10,
+	mitigation = 0.05,
 }
 
 monster.elements = {
 	{ type = COMBAT_PHYSICALDAMAGE, percent = 0 },
 	{ type = COMBAT_ENERGYDAMAGE, percent = 0 },
 	{ type = COMBAT_EARTHDAMAGE, percent = 0 },
-	{ type = COMBAT_FIREDAMAGE, percent = 0 },
+	{ type = COMBAT_FIREDAMAGE, percent = -5 },
 	{ type = COMBAT_LIFEDRAIN, percent = 0 },
 	{ type = COMBAT_MANADRAIN, percent = 0 },
 	{ type = COMBAT_DROWNDAMAGE, percent = 0 },
-	{ type = COMBAT_ICEDAMAGE, percent = -10 },
-	{ type = COMBAT_HOLYDAMAGE, percent = 30 },
-	{ type = COMBAT_DEATHDAMAGE, percent = -5 },
+	{ type = COMBAT_ICEDAMAGE, percent = 0 },
+	{ type = COMBAT_HOLYDAMAGE, percent = 0 },
+	{ type = COMBAT_DEATHDAMAGE, percent = 0 },
 }
 
 monster.immunities = {

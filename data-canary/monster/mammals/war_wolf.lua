@@ -1,10 +1,10 @@
-local mType = Game.createMonsterType("Wolf")
+local mType = Game.createMonsterType("War Wolf")
 local monster = {}
 
-monster.description = "a wolf"
-monster.experience = 18
+monster.description = "a war wolf"
+monster.experience = 55
 monster.outfit = {
-	lookType = 27,
+	lookType = 3,
 	lookHead = 0,
 	lookBody = 0,
 	lookLegs = 0,
@@ -13,25 +13,25 @@ monster.outfit = {
 	lookMount = 0,
 }
 
-monster.raceId = 27
+monster.raceId = 3
 monster.Bestiary = {
 	class = "Mammal",
 	race = BESTY_RACE_MAMMAL,
-	toKill = 250,
-	FirstUnlock = 10,
-	SecondUnlock = 100,
-	CharmsPoints = 5,
-	Stars = 1,
+	toKill = 500,
+	FirstUnlock = 25,
+	SecondUnlock = 250,
+	CharmsPoints = 15,
+	Stars = 2,
 	Occurrence = 0,
-	Locations = "In almost all grass areas in Tibia, also found in Rookgaard and Dawnport.",
+	Locations = "Orc Fort, the Orc Peninsula, Magician Tower and northwest tower or south underground of Thais, Zao steppe encaged, Vengoth.",
 }
 
-monster.health = 25
-monster.maxHealth = 25
+monster.health = 140
+monster.maxHealth = 140
 monster.race = "blood"
-monster.corpse = 5968
-monster.speed = 82
-monster.manaCost = 255
+monster.corpse = 6009
+monster.speed = 132
+monster.manaCost = 420
 
 monster.changeTarget = {
 	interval = 4000,
@@ -43,18 +43,18 @@ monster.strategiesTarget = {
 }
 
 monster.flags = {
-	summonable = true,
+	summonable = false,
 	attackable = true,
 	hostile = true,
 	convinceable = true,
-	pushable = true,
+	pushable = false,
 	rewardBoss = false,
 	illusionable = true,
-	canPushItems = false,
+	canPushItems = true,
 	canPushCreatures = false,
-	staticAttackChance = 90,
+	staticAttackChance = 80,
 	targetDistance = 1,
-	runHealth = 8,
+	runHealth = 0,
 	healthHidden = false,
 	isBlockable = false,
 	canWalkOnEnergy = false,
@@ -75,36 +75,37 @@ monster.voices = {
 }
 
 monster.loot = {
-	{ name = "meat", chance = 55000, maxCount = 2 },
-	{ name = "wolf paw", chance = 980 },
+	{ name = "ham", chance = 35000, maxCount = 2 },
+	{ name = "wolf paw", chance = 710 },
+	{ name = "warwolf fur", chance = 5230 },
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -20 },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -50 },
 }
 
 monster.defenses = {
-	defense = 5,
-	armor = 1,
-	mitigation = 0.10,
+	defense = 15,
+	armor = 8,
+	mitigation = 0.41,
 }
 
 monster.elements = {
 	{ type = COMBAT_PHYSICALDAMAGE, percent = 0 },
 	{ type = COMBAT_ENERGYDAMAGE, percent = 0 },
-	{ type = COMBAT_EARTHDAMAGE, percent = 0 },
+	{ type = COMBAT_EARTHDAMAGE, percent = 20 },
 	{ type = COMBAT_FIREDAMAGE, percent = 0 },
 	{ type = COMBAT_LIFEDRAIN, percent = 0 },
 	{ type = COMBAT_MANADRAIN, percent = 0 },
 	{ type = COMBAT_DROWNDAMAGE, percent = 0 },
 	{ type = COMBAT_ICEDAMAGE, percent = -10 },
-	{ type = COMBAT_HOLYDAMAGE, percent = 30 },
-	{ type = COMBAT_DEATHDAMAGE, percent = -5 },
+	{ type = COMBAT_HOLYDAMAGE, percent = 10 },
+	{ type = COMBAT_DEATHDAMAGE, percent = -10 },
 }
 
 monster.immunities = {
 	{ type = "paralyze", condition = false },
-	{ type = "outfit", condition = false },
+	{ type = "outfit", condition = true },
 	{ type = "invisible", condition = false },
 	{ type = "bleed", condition = false },
 }

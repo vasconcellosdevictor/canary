@@ -1,10 +1,10 @@
-local mType = Game.createMonsterType("Wolf")
+local mType = Game.createMonsterType("Skunk")
 local monster = {}
 
-monster.description = "a wolf"
-monster.experience = 18
+monster.description = "a skunk"
+monster.experience = 3
 monster.outfit = {
-	lookType = 27,
+	lookType = 106,
 	lookHead = 0,
 	lookBody = 0,
 	lookLegs = 0,
@@ -13,7 +13,7 @@ monster.outfit = {
 	lookMount = 0,
 }
 
-monster.raceId = 27
+monster.raceId = 106
 monster.Bestiary = {
 	class = "Mammal",
 	race = BESTY_RACE_MAMMAL,
@@ -23,15 +23,16 @@ monster.Bestiary = {
 	CharmsPoints = 5,
 	Stars = 1,
 	Occurrence = 0,
-	Locations = "In almost all grass areas in Tibia, also found in Rookgaard and Dawnport.",
+	Locations = "Unannounced raid in Edron outside the depot, Tiquanda, Shattered Isles, \z
+		Liberty Bay, south gate of Thais.",
 }
 
-monster.health = 25
-monster.maxHealth = 25
+monster.health = 20
+monster.maxHealth = 20
 monster.race = "blood"
-monster.corpse = 5968
-monster.speed = 82
-monster.manaCost = 255
+monster.corpse = 6035
+monster.speed = 68
+monster.manaCost = 200
 
 monster.changeTarget = {
 	interval = 4000,
@@ -47,10 +48,10 @@ monster.flags = {
 	attackable = true,
 	hostile = true,
 	convinceable = true,
-	pushable = true,
+	pushable = false,
 	rewardBoss = false,
 	illusionable = true,
-	canPushItems = false,
+	canPushItems = true,
 	canPushCreatures = false,
 	staticAttackChance = 90,
 	targetDistance = 1,
@@ -60,6 +61,7 @@ monster.flags = {
 	canWalkOnEnergy = false,
 	canWalkOnFire = false,
 	canWalkOnPoison = false,
+	isPreyExclusive = true,
 }
 
 monster.light = {
@@ -70,23 +72,22 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Yoooohhuuuu!", yell = false },
-	{ text = "Grrrrrrr", yell = false },
 }
 
 monster.loot = {
-	{ name = "meat", chance = 55000, maxCount = 2 },
-	{ name = "wolf paw", chance = 980 },
+	{ name = "bulb of garlic", chance = 4910 },
+	{ name = "skunk tail", chance = 920 },
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -20 },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -5 },
+	{ name = "combat", interval = 2000, chance = 10, type = COMBAT_EARTHDAMAGE, minDamage = -1, maxDamage = -3, range = 1, target = true },
 }
 
 monster.defenses = {
 	defense = 5,
 	armor = 1,
-	mitigation = 0.10,
+	mitigation = 0.13,
 }
 
 monster.elements = {
@@ -97,9 +98,9 @@ monster.elements = {
 	{ type = COMBAT_LIFEDRAIN, percent = 0 },
 	{ type = COMBAT_MANADRAIN, percent = 0 },
 	{ type = COMBAT_DROWNDAMAGE, percent = 0 },
-	{ type = COMBAT_ICEDAMAGE, percent = -10 },
-	{ type = COMBAT_HOLYDAMAGE, percent = 30 },
-	{ type = COMBAT_DEATHDAMAGE, percent = -5 },
+	{ type = COMBAT_ICEDAMAGE, percent = 0 },
+	{ type = COMBAT_HOLYDAMAGE, percent = 0 },
+	{ type = COMBAT_DEATHDAMAGE, percent = 0 },
 }
 
 monster.immunities = {

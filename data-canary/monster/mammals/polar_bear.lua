@@ -1,10 +1,10 @@
-local mType = Game.createMonsterType("Wolf")
+local mType = Game.createMonsterType("Polar Bear")
 local monster = {}
 
-monster.description = "a wolf"
-monster.experience = 18
+monster.description = "a polar bear"
+monster.experience = 28
 monster.outfit = {
-	lookType = 27,
+	lookType = 42,
 	lookHead = 0,
 	lookBody = 0,
 	lookLegs = 0,
@@ -13,25 +13,25 @@ monster.outfit = {
 	lookMount = 0,
 }
 
-monster.raceId = 27
+monster.raceId = 42
 monster.Bestiary = {
 	class = "Mammal",
 	race = BESTY_RACE_MAMMAL,
-	toKill = 250,
-	FirstUnlock = 10,
-	SecondUnlock = 100,
-	CharmsPoints = 5,
-	Stars = 1,
+	toKill = 500,
+	FirstUnlock = 25,
+	SecondUnlock = 250,
+	CharmsPoints = 15,
+	Stars = 2,
 	Occurrence = 0,
-	Locations = "In almost all grass areas in Tibia, also found in Rookgaard and Dawnport.",
+	Locations = "Ice Islands.",
 }
 
-monster.health = 25
-monster.maxHealth = 25
+monster.health = 85
+monster.maxHealth = 85
 monster.race = "blood"
-monster.corpse = 5968
-monster.speed = 82
-monster.manaCost = 255
+monster.corpse = 5987
+monster.speed = 78
+monster.manaCost = 315
 
 monster.changeTarget = {
 	interval = 4000,
@@ -47,14 +47,14 @@ monster.flags = {
 	attackable = true,
 	hostile = true,
 	convinceable = true,
-	pushable = true,
+	pushable = false,
 	rewardBoss = false,
 	illusionable = true,
 	canPushItems = false,
 	canPushCreatures = false,
 	staticAttackChance = 90,
 	targetDistance = 1,
-	runHealth = 8,
+	runHealth = 5,
 	healthHidden = false,
 	isBlockable = false,
 	canWalkOnEnergy = false,
@@ -70,36 +70,36 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Yoooohhuuuu!", yell = false },
-	{ text = "Grrrrrrr", yell = false },
+	{ text = "GROARRR!", yell = true },
 }
 
 monster.loot = {
-	{ name = "meat", chance = 55000, maxCount = 2 },
-	{ name = "wolf paw", chance = 980 },
+	{ name = "meat", chance = 50500, maxCount = 4 },
+	{ name = "ham", chance = 50320, maxCount = 2 },
+	{ name = "polar bear paw", chance = 980 },
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -20 },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -30 },
 }
 
 monster.defenses = {
-	defense = 5,
-	armor = 1,
-	mitigation = 0.10,
+	defense = 10,
+	armor = 7,
+	mitigation = 0.25,
 }
 
 monster.elements = {
 	{ type = COMBAT_PHYSICALDAMAGE, percent = 0 },
-	{ type = COMBAT_ENERGYDAMAGE, percent = 0 },
+	{ type = COMBAT_ENERGYDAMAGE, percent = -5 },
 	{ type = COMBAT_EARTHDAMAGE, percent = 0 },
-	{ type = COMBAT_FIREDAMAGE, percent = 0 },
+	{ type = COMBAT_FIREDAMAGE, percent = 10 },
 	{ type = COMBAT_LIFEDRAIN, percent = 0 },
 	{ type = COMBAT_MANADRAIN, percent = 0 },
 	{ type = COMBAT_DROWNDAMAGE, percent = 0 },
-	{ type = COMBAT_ICEDAMAGE, percent = -10 },
-	{ type = COMBAT_HOLYDAMAGE, percent = 30 },
-	{ type = COMBAT_DEATHDAMAGE, percent = -5 },
+	{ type = COMBAT_ICEDAMAGE, percent = 20 },
+	{ type = COMBAT_HOLYDAMAGE, percent = 0 },
+	{ type = COMBAT_DEATHDAMAGE, percent = -10 },
 }
 
 monster.immunities = {

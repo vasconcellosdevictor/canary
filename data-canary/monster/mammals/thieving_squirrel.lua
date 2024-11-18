@@ -1,10 +1,10 @@
-local mType = Game.createMonsterType("Wolf")
+local mType = Game.createMonsterType("Thieving Squirrel")
 local monster = {}
 
-monster.description = "a wolf"
-monster.experience = 18
+monster.description = "a thieving squirrel"
+monster.experience = 15
 monster.outfit = {
-	lookType = 27,
+	lookType = 274,
 	lookHead = 0,
 	lookBody = 0,
 	lookLegs = 0,
@@ -13,25 +13,12 @@ monster.outfit = {
 	lookMount = 0,
 }
 
-monster.raceId = 27
-monster.Bestiary = {
-	class = "Mammal",
-	race = BESTY_RACE_MAMMAL,
-	toKill = 250,
-	FirstUnlock = 10,
-	SecondUnlock = 100,
-	CharmsPoints = 5,
-	Stars = 1,
-	Occurrence = 0,
-	Locations = "In almost all grass areas in Tibia, also found in Rookgaard and Dawnport.",
-}
-
-monster.health = 25
-monster.maxHealth = 25
+monster.health = 55
+monster.maxHealth = 55
 monster.race = "blood"
-monster.corpse = 5968
-monster.speed = 82
-monster.manaCost = 255
+monster.corpse = 276
+monster.speed = 500
+monster.manaCost = 220
 
 monster.changeTarget = {
 	interval = 4000,
@@ -45,16 +32,16 @@ monster.strategiesTarget = {
 monster.flags = {
 	summonable = true,
 	attackable = true,
-	hostile = true,
+	hostile = false,
 	convinceable = true,
-	pushable = true,
+	pushable = false,
 	rewardBoss = false,
 	illusionable = true,
-	canPushItems = false,
+	canPushItems = true,
 	canPushCreatures = false,
-	staticAttackChance = 90,
+	staticAttackChance = 95,
 	targetDistance = 1,
-	runHealth = 8,
+	runHealth = 55,
 	healthHidden = false,
 	isBlockable = false,
 	canWalkOnEnergy = false,
@@ -70,23 +57,21 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Yoooohhuuuu!", yell = false },
-	{ text = "Grrrrrrr", yell = false },
+	{ text = "Chchch", yell = false },
 }
 
 monster.loot = {
-	{ name = "meat", chance = 55000, maxCount = 2 },
-	{ name = "wolf paw", chance = 980 },
+	{ id = 9843, chance = 100000 }, -- flask with beaver bait
+	{ id = 841, chance = 4550 }, -- peanut
 }
 
-monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -20 },
-}
+monster.attacks = {}
 
 monster.defenses = {
 	defense = 5,
-	armor = 1,
+	armor = 5,
 	mitigation = 0.10,
+	{ name = "invisible", interval = 2000, chance = 10, effect = CONST_ME_MAGIC_BLUE },
 }
 
 monster.elements = {
@@ -97,15 +82,15 @@ monster.elements = {
 	{ type = COMBAT_LIFEDRAIN, percent = 0 },
 	{ type = COMBAT_MANADRAIN, percent = 0 },
 	{ type = COMBAT_DROWNDAMAGE, percent = 0 },
-	{ type = COMBAT_ICEDAMAGE, percent = -10 },
-	{ type = COMBAT_HOLYDAMAGE, percent = 30 },
-	{ type = COMBAT_DEATHDAMAGE, percent = -5 },
+	{ type = COMBAT_ICEDAMAGE, percent = 0 },
+	{ type = COMBAT_HOLYDAMAGE, percent = 0 },
+	{ type = COMBAT_DEATHDAMAGE, percent = 0 },
 }
 
 monster.immunities = {
-	{ type = "paralyze", condition = false },
+	{ type = "paralyze", condition = true },
 	{ type = "outfit", condition = false },
-	{ type = "invisible", condition = false },
+	{ type = "invisible", condition = true },
 	{ type = "bleed", condition = false },
 }
 

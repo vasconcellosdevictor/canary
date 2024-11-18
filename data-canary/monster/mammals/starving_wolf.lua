@@ -1,8 +1,8 @@
-local mType = Game.createMonsterType("Wolf")
+local mType = Game.createMonsterType("Starving Wolf")
 local monster = {}
 
-monster.description = "a wolf"
-monster.experience = 18
+monster.description = "a starving wolf"
+monster.experience = 65
 monster.outfit = {
 	lookType = 27,
 	lookHead = 0,
@@ -13,25 +13,25 @@ monster.outfit = {
 	lookMount = 0,
 }
 
-monster.raceId = 27
+monster.raceId = 723
 monster.Bestiary = {
 	class = "Mammal",
 	race = BESTY_RACE_MAMMAL,
-	toKill = 250,
-	FirstUnlock = 10,
-	SecondUnlock = 100,
-	CharmsPoints = 5,
-	Stars = 1,
-	Occurrence = 0,
-	Locations = "In almost all grass areas in Tibia, also found in Rookgaard and Dawnport.",
+	toKill = 500,
+	FirstUnlock = 25,
+	SecondUnlock = 250,
+	CharmsPoints = 15,
+	Stars = 2,
+	Occurrence = 2,
+	Locations = "East, west and south-west of the Femor Hills.",
 }
 
-monster.health = 25
-monster.maxHealth = 25
+monster.health = 85
+monster.maxHealth = 85
 monster.race = "blood"
 monster.corpse = 5968
-monster.speed = 82
-monster.manaCost = 255
+monster.speed = 94
+monster.manaCost = 0
 
 monster.changeTarget = {
 	interval = 4000,
@@ -43,10 +43,10 @@ monster.strategiesTarget = {
 }
 
 monster.flags = {
-	summonable = true,
+	summonable = false,
 	attackable = true,
 	hostile = true,
-	convinceable = true,
+	convinceable = false,
 	pushable = true,
 	rewardBoss = false,
 	illusionable = true,
@@ -57,9 +57,10 @@ monster.flags = {
 	runHealth = 8,
 	healthHidden = false,
 	isBlockable = false,
-	canWalkOnEnergy = false,
-	canWalkOnFire = false,
-	canWalkOnPoison = false,
+	canWalkOnEnergy = true,
+	canWalkOnFire = true,
+	canWalkOnPoison = true,
+	isPreyExclusive = true,
 }
 
 monster.light = {
@@ -70,23 +71,26 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
+	{ text = "Gaarrrrrr", yell = false },
+	{ text = "Gnoorrr", yell = false },
 	{ text = "Yoooohhuuuu!", yell = false },
-	{ text = "Grrrrrrr", yell = false },
 }
 
 monster.loot = {
-	{ name = "meat", chance = 55000, maxCount = 2 },
-	{ name = "wolf paw", chance = 980 },
+	{ name = "dirty fur", chance = 64730 },
+	{ name = "meat", chance = 5300, maxCount = 2 },
+	{ name = "wolf paw", chance = 1430 },
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -20 },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -25 },
 }
 
 monster.defenses = {
-	defense = 5,
-	armor = 1,
-	mitigation = 0.10,
+	defense = 10,
+	armor = 2,
+	mitigation = 0.33,
+	{ name = "effect", interval = 2000, chance = 10, radius = 1, effect = CONST_ME_YELLOW_RINGS, target = false },
 }
 
 monster.elements = {
@@ -103,9 +107,9 @@ monster.elements = {
 }
 
 monster.immunities = {
-	{ type = "paralyze", condition = false },
+	{ type = "paralyze", condition = true },
 	{ type = "outfit", condition = false },
-	{ type = "invisible", condition = false },
+	{ type = "invisible", condition = true },
 	{ type = "bleed", condition = false },
 }
 

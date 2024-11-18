@@ -1,10 +1,11 @@
-local mType = Game.createMonsterType("Wolf")
+local mType = Game.createMonsterType("Brown Horse")
 local monster = {}
 
-monster.description = "a wolf"
-monster.experience = 18
+monster.name = "Horse"
+monster.description = "a horse"
+monster.experience = 0
 monster.outfit = {
-	lookType = 27,
+	lookType = 436,
 	lookHead = 0,
 	lookBody = 0,
 	lookLegs = 0,
@@ -13,7 +14,7 @@ monster.outfit = {
 	lookMount = 0,
 }
 
-monster.raceId = 27
+monster.raceId = 752
 monster.Bestiary = {
 	class = "Mammal",
 	race = BESTY_RACE_MAMMAL,
@@ -22,20 +23,20 @@ monster.Bestiary = {
 	SecondUnlock = 100,
 	CharmsPoints = 5,
 	Stars = 1,
-	Occurrence = 0,
-	Locations = "In almost all grass areas in Tibia, also found in Rookgaard and Dawnport.",
+	Occurrence = 1,
+	Locations = "South-east, east and north-east of Thais depending on the Horse Station World Change.",
 }
 
-monster.health = 25
-monster.maxHealth = 25
+monster.health = 75
+monster.maxHealth = 75
 monster.race = "blood"
-monster.corpse = 5968
-monster.speed = 82
-monster.manaCost = 255
+monster.corpse = 0
+monster.speed = 124
+monster.manaCost = 0
 
 monster.changeTarget = {
 	interval = 4000,
-	chance = 0,
+	chance = 20,
 }
 
 monster.strategiesTarget = {
@@ -43,18 +44,18 @@ monster.strategiesTarget = {
 }
 
 monster.flags = {
-	summonable = true,
+	summonable = false,
 	attackable = true,
-	hostile = true,
-	convinceable = true,
+	hostile = false,
+	convinceable = false,
 	pushable = true,
 	rewardBoss = false,
-	illusionable = true,
+	illusionable = false,
 	canPushItems = false,
 	canPushCreatures = false,
 	staticAttackChance = 90,
 	targetDistance = 1,
-	runHealth = 8,
+	runHealth = 75,
 	healthHidden = false,
 	isBlockable = false,
 	canWalkOnEnergy = false,
@@ -70,23 +71,16 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Yoooohhuuuu!", yell = false },
-	{ text = "Grrrrrrr", yell = false },
+	{ text = "Weeeeheeeeeee", yell = false },
+	{ text = "*snort*", yell = false },
+	{ text = "*Weeeeheeeeaaa*", yell = false },
 }
 
-monster.loot = {
-	{ name = "meat", chance = 55000, maxCount = 2 },
-	{ name = "wolf paw", chance = 980 },
-}
-
-monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -20 },
-}
+monster.loot = {}
 
 monster.defenses = {
 	defense = 5,
-	armor = 1,
-	mitigation = 0.10,
+	armor = 10,
 }
 
 monster.elements = {
@@ -97,9 +91,9 @@ monster.elements = {
 	{ type = COMBAT_LIFEDRAIN, percent = 0 },
 	{ type = COMBAT_MANADRAIN, percent = 0 },
 	{ type = COMBAT_DROWNDAMAGE, percent = 0 },
-	{ type = COMBAT_ICEDAMAGE, percent = -10 },
-	{ type = COMBAT_HOLYDAMAGE, percent = 30 },
-	{ type = COMBAT_DEATHDAMAGE, percent = -5 },
+	{ type = COMBAT_ICEDAMAGE, percent = 0 },
+	{ type = COMBAT_HOLYDAMAGE, percent = 0 },
+	{ type = COMBAT_DEATHDAMAGE, percent = 0 },
 }
 
 monster.immunities = {

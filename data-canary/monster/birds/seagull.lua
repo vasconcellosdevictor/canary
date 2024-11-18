@@ -1,10 +1,10 @@
-local mType = Game.createMonsterType("Wolf")
+local mType = Game.createMonsterType("Seagull")
 local monster = {}
 
-monster.description = "a wolf"
-monster.experience = 18
+monster.description = "a seagull"
+monster.experience = 0
 monster.outfit = {
-	lookType = 27,
+	lookType = 223,
 	lookHead = 0,
 	lookBody = 0,
 	lookLegs = 0,
@@ -13,28 +13,31 @@ monster.outfit = {
 	lookMount = 0,
 }
 
-monster.raceId = 27
+monster.raceId = 264
 monster.Bestiary = {
-	class = "Mammal",
-	race = BESTY_RACE_MAMMAL,
+	class = "Bird",
+	race = BESTY_RACE_BIRD,
 	toKill = 250,
 	FirstUnlock = 10,
 	SecondUnlock = 100,
 	CharmsPoints = 5,
 	Stars = 1,
 	Occurrence = 0,
-	Locations = "In almost all grass areas in Tibia, also found in Rookgaard and Dawnport.",
+	Locations = "Various locations, sighted in the Shattered Isles, Venore, Thais, Femor Hills, \z
+		Cormaya, Edron Troll-Goblin Peninsula, Liberty Bay, Port Hope, Fibula, Drefia, Factory Quarter, \z
+		bordering Orc Fort, Rookgaard Premium Zone (not reachable), AbDendriel elf caves, \z
+		Northern coast of Tibia between Dalbrect and Northport.",
 }
 
 monster.health = 25
 monster.maxHealth = 25
 monster.race = "blood"
-monster.corpse = 5968
-monster.speed = 82
-monster.manaCost = 255
+monster.corpse = 6076
+monster.speed = 160
+monster.manaCost = 250
 
 monster.changeTarget = {
-	interval = 4000,
+	interval = 5000,
 	chance = 0,
 }
 
@@ -53,13 +56,14 @@ monster.flags = {
 	canPushItems = false,
 	canPushCreatures = false,
 	staticAttackChance = 90,
-	targetDistance = 1,
-	runHealth = 8,
+	targetDistance = 11,
+	runHealth = 25,
 	healthHidden = false,
 	isBlockable = false,
 	canWalkOnEnergy = false,
 	canWalkOnFire = false,
 	canWalkOnPoison = false,
+	isPreyExclusive = true,
 }
 
 monster.light = {
@@ -70,23 +74,18 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Yoooohhuuuu!", yell = false },
-	{ text = "Grrrrrrr", yell = false },
 }
 
-monster.loot = {
-	{ name = "meat", chance = 55000, maxCount = 2 },
-	{ name = "wolf paw", chance = 980 },
-}
+monster.loot = {}
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -20 },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -3 },
 }
 
 monster.defenses = {
 	defense = 5,
-	armor = 1,
-	mitigation = 0.10,
+	armor = 2,
+	mitigation = 0.15,
 }
 
 monster.elements = {
@@ -97,9 +96,9 @@ monster.elements = {
 	{ type = COMBAT_LIFEDRAIN, percent = 0 },
 	{ type = COMBAT_MANADRAIN, percent = 0 },
 	{ type = COMBAT_DROWNDAMAGE, percent = 0 },
-	{ type = COMBAT_ICEDAMAGE, percent = -10 },
-	{ type = COMBAT_HOLYDAMAGE, percent = 30 },
-	{ type = COMBAT_DEATHDAMAGE, percent = -5 },
+	{ type = COMBAT_ICEDAMAGE, percent = 0 },
+	{ type = COMBAT_HOLYDAMAGE, percent = 0 },
+	{ type = COMBAT_DEATHDAMAGE, percent = 0 },
 }
 
 monster.immunities = {

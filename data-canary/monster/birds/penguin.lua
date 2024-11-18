@@ -1,10 +1,10 @@
-local mType = Game.createMonsterType("Wolf")
+local mType = Game.createMonsterType("Penguin")
 local monster = {}
 
-monster.description = "a wolf"
-monster.experience = 18
+monster.description = "a penguin"
+monster.experience = 1
 monster.outfit = {
-	lookType = 27,
+	lookType = 250,
 	lookHead = 0,
 	lookBody = 0,
 	lookLegs = 0,
@@ -13,25 +13,25 @@ monster.outfit = {
 	lookMount = 0,
 }
 
-monster.raceId = 27
+monster.raceId = 318
 monster.Bestiary = {
-	class = "Mammal",
-	race = BESTY_RACE_MAMMAL,
+	class = "Bird",
+	race = BESTY_RACE_BIRD,
 	toKill = 250,
 	FirstUnlock = 10,
 	SecondUnlock = 100,
 	CharmsPoints = 5,
 	Stars = 1,
 	Occurrence = 0,
-	Locations = "In almost all grass areas in Tibia, also found in Rookgaard and Dawnport.",
+	Locations = "In and north of Formorgar Glacier, Nibelor, Helheim, Grimlund, south of Svargrond, Chyllfroest.",
 }
 
-monster.health = 25
-monster.maxHealth = 25
+monster.health = 33
+monster.maxHealth = 33
 monster.race = "blood"
-monster.corpse = 5968
-monster.speed = 82
-monster.manaCost = 255
+monster.corpse = 7334
+monster.speed = 58
+monster.manaCost = 290
 
 monster.changeTarget = {
 	interval = 4000,
@@ -47,19 +47,20 @@ monster.flags = {
 	attackable = true,
 	hostile = true,
 	convinceable = true,
-	pushable = true,
+	pushable = false,
 	rewardBoss = false,
 	illusionable = true,
-	canPushItems = false,
+	canPushItems = true,
 	canPushCreatures = false,
 	staticAttackChance = 90,
 	targetDistance = 1,
-	runHealth = 8,
+	runHealth = 32,
 	healthHidden = false,
 	isBlockable = false,
 	canWalkOnEnergy = false,
 	canWalkOnFire = false,
 	canWalkOnPoison = false,
+	isPreyExclusive = true,
 }
 
 monster.light = {
@@ -70,36 +71,35 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Yoooohhuuuu!", yell = false },
-	{ text = "Grrrrrrr", yell = false },
 }
 
 monster.loot = {
-	{ name = "meat", chance = 55000, maxCount = 2 },
-	{ name = "wolf paw", chance = 980 },
+	{ id = 3578, chance = 7830, maxCount = 2 }, -- fish
+	{ name = "rainbow trout", chance = 70 },
+	{ name = "green perch", chance = 130 },
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -20 },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -3 },
 }
 
 monster.defenses = {
 	defense = 5,
-	armor = 1,
-	mitigation = 0.10,
+	armor = 2,
+	mitigation = 0.07,
 }
 
 monster.elements = {
 	{ type = COMBAT_PHYSICALDAMAGE, percent = 0 },
-	{ type = COMBAT_ENERGYDAMAGE, percent = 0 },
+	{ type = COMBAT_ENERGYDAMAGE, percent = -10 },
 	{ type = COMBAT_EARTHDAMAGE, percent = 0 },
 	{ type = COMBAT_FIREDAMAGE, percent = 0 },
 	{ type = COMBAT_LIFEDRAIN, percent = 0 },
 	{ type = COMBAT_MANADRAIN, percent = 0 },
 	{ type = COMBAT_DROWNDAMAGE, percent = 0 },
-	{ type = COMBAT_ICEDAMAGE, percent = -10 },
-	{ type = COMBAT_HOLYDAMAGE, percent = 30 },
-	{ type = COMBAT_DEATHDAMAGE, percent = -5 },
+	{ type = COMBAT_ICEDAMAGE, percent = 20 },
+	{ type = COMBAT_HOLYDAMAGE, percent = 0 },
+	{ type = COMBAT_DEATHDAMAGE, percent = 0 },
 }
 
 monster.immunities = {
