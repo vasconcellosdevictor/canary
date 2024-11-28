@@ -250,8 +250,20 @@ function Player.isSorcerer(self)
 	return table.contains({ VOCATION.ID.SORCERER, VOCATION.ID.MASTER_SORCERER }, self:getVocation():getId())
 end
 
+function Player.isWizard(self)
+	return table.contains({ VOCATION.ID.WIZARD }, self:getVocation():getId())
+end
+
+function Player.isAdventurer(self)
+	return table.contains({ VOCATION.ID.ADVENTURER }, self:getVocation():getId())
+end
+
 function Player.isDruid(self)
 	return table.contains({ VOCATION.ID.DRUID, VOCATION.ID.ELDER_DRUID }, self:getVocation():getId())
+end
+
+function Player.isBard(self)
+	return table.contains({ VOCATION.ID.BARD }, self:getVocation():getId())
 end
 
 function Player.isKnight(self)
@@ -262,8 +274,12 @@ function Player.isPaladin(self)
 	return table.contains({ VOCATION.ID.PALADIN, VOCATION.ID.ROYAL_PALADIN }, self:getVocation():getId())
 end
 
+function Player.isArcher(self)
+	return table.contains({ VOCATION.ID.ARCHER }, self:getVocation():getId())
+end
+
 function Player.isMage(self)
-	return table.contains({ VOCATION.ID.SORCERER, VOCATION.ID.MASTER_SORCERER, VOCATION.ID.DRUID, VOCATION.ID.ELDER_DRUID }, self:getVocation():getId())
+	return table.contains({ VOCATION.ID.SORCERER, VOCATION.ID.MASTER_SORCERER, VOCATION.ID.BARD, VOCATION.ID.WIZARD, VOCATION.ID.DRUID, VOCATION.ID.ELDER_DRUID }, self:getVocation():getId())
 end
 
 local ACCOUNT_STORAGES = {}
