@@ -2,7 +2,7 @@
 <items>
 	<!-- Liquids -->
     <!-- Fluid type 0 is same as water (id="1") -->
-    <item id="1" name="water"/>
+    <item id="1" name="saltwater"/>
     <item id="2" name="wine"/>
     <item id="3" name="beer"/>
     <item id="4" name="mud"/>
@@ -22,6 +22,7 @@
     <item id="18" name="ink"/>
     <item id="19" name="candyfluid"/>
     <item id="20" name="chocolate"/>
+	<item id="21" name="freshwater"/>
     <!-- 13.40 last fluid is 20, 21+ is a loop from 0 to 20 over and over again -->
 
 	<item id="100" name="void"/>
@@ -164,7 +165,7 @@
 	</item>
 	<item id="137" article="a" name="water cask">
 		<attribute key="primarytype" value="casks"/>
-		<attribute key="fluidsource" value="water"/>
+		<attribute key="fluidsource" value="freshwater"/>
 	</item>
 	<item id="138" article="an" name="empty beer bottle">
 		<attribute key="primarytype" value="quest items"/>
@@ -1059,10 +1060,10 @@
 		<attribute key="primarytype" value="artificial tiles"/>
 		<attribute key="type" value="teleport"/>
 	</item>
-	<item fromid="629" toid="634" name="shallow water">
+	<item fromid="629" toid="634" name="water">
 		<attribute key="primarytype" value="natural tiles"/>
 		<attribute key="type" value="trashholder"/>
-		<attribute key="fluidsource" value="water"/>
+		<attribute key="fluidsource" value="freshwater"/>
 		<attribute key="effect" value="bluebubble"/>
 	</item>
 	<item fromid="635" toid="636" article="a" name="parchment">
@@ -3029,9 +3030,9 @@
 		<attribute key="primarytype" value="artificial tiles"/>
 		<attribute key="type" value="teleport"/>
 	</item>
-	<item fromid="880" toid="891" name="shallow water">
+	<item fromid="880" toid="891" name="water">
 		<attribute key="primarytype" value="natural tiles"/>
-		<attribute key="fluidsource" value="water"/>
+		<attribute key="fluidsource" value="saltwater"/>
 	</item>
 	<item id="892" article="a" name="package of potions">
 		<attribute key="description" value="It contains 5 health and 5 mana potions"/>
@@ -3375,7 +3376,7 @@
 	</item>
 	<item fromid="1399" toid="1402" article="a" name="wall fountain">
 		<attribute key="primarytype" value="wall hangings"/>
-		<attribute key="fluidsource" value="water"/>
+		<attribute key="fluidsource" value="freshwater"/>
 	</item>
 	<item fromid="1403" toid="1408" article="an" name="archway">
 		<attribute key="primarytype" value="constructions"/>
@@ -3391,7 +3392,7 @@
 	</item>
 	<item fromid="1439" toid="1440" article="a" name="wall fountain">
 		<attribute key="primarytype" value="wall hangings"/>
-		<attribute key="fluidsource" value="water"/>
+		<attribute key="fluidsource" value="freshwater"/>
 	</item>
 	<item fromid="1441" toid="1449" article="a" name="lava wall">
 		<attribute key="primarytype" value="walls"/>
@@ -3883,15 +3884,15 @@
 	</item>
 	<item fromid="1922" toid="1925" article="a" name="fountain">
 		<attribute key="primarytype" value="constructions"/>
-		<attribute key="fluidsource" value="water"/>
+		<attribute key="fluidsource" value="freshwater"/>
 	</item>
 	<item fromid="1926" toid="1929" article="a" name="water basin">
 		<attribute key="primarytype" value="constructions"/>
-		<attribute key="fluidsource" value="water"/>
+		<attribute key="fluidsource" value="freshwater"/>
 	</item>
 	<item fromid="1930" toid="1931" article="a" name="draw well">
 		<attribute key="primarytype" value="constructions"/>
-		<attribute key="fluidsource" value="water"/>
+		<attribute key="fluidsource" value="freshwater"/>
 	</item>
 	<item fromid="1932" toid="1935" article="a" name="marble well">
 		<attribute key="primarytype" value="constructions"/>
@@ -13950,54 +13951,32 @@
 	<item fromid="4585" toid="4596" name="sand">
 		<attribute key="primarytype" value="natural tiles"/>
 	</item>
-	<item fromid="4597" toid="4602" name="shallow water">
+	<item fromid="4597" toid="4608" name="water">
 		<attribute key="primarytype" value="natural tiles"/>
-		<attribute key="fluidsource" value="water"/>
+		<attribute key="fluidsource" value="saltwater"/>
 		<attribute key="type" value="trashholder"/>
 		<attribute key="effect" value="bluebubble"/>
-	</item>
-	<item fromid="4603" toid="4608" name="grass"/>
-	<item fromid="4609" toid="4611" name="shallow water">
-		<attribute key="primarytype" value="natural tiles"/>
-		<attribute key="description" value="You see the silvery movement of fish."/>
-		<attribute key="fluidsource" value="water"/>
-		<attribute key="type" value="trashholder"/>
-		<attribute key="effect" value="bluebubble"/>
-	</item>
-	<item id="4612" name="shallow water">
-		<attribute key="primarytype" value="natural tiles"/>
-		<attribute key="fluidsource" value="water"/>
-		<attribute key="type" value="trashholder"/>
-		<attribute key="effect" value="bluebubble"/>
-		<attribute key="duration" value="1200"/>
 		<attribute key="decayTo" value="4597"/>
 	</item>
-	<item id="4613" name="shallow water">
+	<item fromid="4609" toid="4614" name="water">
 		<attribute key="primarytype" value="natural tiles"/>
-		<attribute key="fluidsource" value="water"/>
+		<attribute key="description" value="You see the silvery movement of fish."/>
+		<attribute key="fluidsource" value="saltwater"/>
 		<attribute key="type" value="trashholder"/>
 		<attribute key="effect" value="bluebubble"/>
-		<attribute key="duration" value="1200"/>
-		<attribute key="decayTo" value="4598"/>
+		<attribute key="decayTo" value="4609"/>
 	</item>
-	<item id="4614" name="shallow water">
+
+	<item fromid="4621" toid="4632" name="water">
 		<attribute key="primarytype" value="natural tiles"/>
-		<attribute key="fluidsource" value="water"/>
-		<attribute key="type" value="trashholder"/>
-		<attribute key="effect" value="bluebubble"/>
-		<attribute key="duration" value="1200"/>
-		<attribute key="decayTo" value="4599"/>
+		<attribute key="fluidsource" value="saltwater"/>
 	</item>
-	<item fromid="4621" toid="4632" name="shallow water">
+	<item fromid="4633" toid="4652" name="water">
 		<attribute key="primarytype" value="natural tiles"/>
-		<attribute key="fluidsource" value="water"/>
-	</item>
-	<item fromid="4633" toid="4652" name="shallow water">
-		<attribute key="primarytype" value="natural tiles"/>
-		<attribute key="fluidsource" value="water"/>
+		<attribute key="fluidsource" value="saltwater"/>
 	</item>
 	<item id="4653" name="RESERVED SPRITE"/>
-	<item fromid="4654" toid="4655" name="shallow water">
+	<item fromid="4654" toid="4655" name="water">
 		<attribute key="primarytype" value="natural tiles"/>
 	</item>
 	<item fromid="4656" toid="4679" name="dirt"/>
@@ -14006,7 +13985,10 @@
 		<attribute key="type" value="trashholder"/>
 		<attribute key="effect" value="greenbubble"/>
 	</item>
-	<item fromid="4702" toid="4737" name="swamp">
+	<item fromid="4702" toid="4725" name="swamp">
+		<attribute key="primarytype" value="natural tiles"/>
+	</item>
+		<item fromid="4726" toid="4737" name="water">
 		<attribute key="primarytype" value="natural tiles"/>
 	</item>
 	<item fromid="4738" toid="4744" name="swamp">
@@ -14021,17 +14003,17 @@
 	</item>
 	<item fromid="4773" toid="4784" name="grass"/>
 	<item fromid="4785" toid="4808" name="dirt"/>
-	<item fromid="4809" toid="4814" name="shallow water">
+	<item fromid="4809" toid="4814" name="water">
 		<attribute key="primarytype" value="natural tiles"/>
-		<attribute key="fluidsource" value="water"/>
+		<attribute key="fluidsource" value="saltwater"/>
 		<attribute key="effect" value="bluebubble"/>
 	</item>
 	<item fromid="4815" toid="4816" article="a" name="mountain">
 		<attribute key="primarytype" value="rocks"/>
 	</item>
-	<item fromid="4817" toid="4820" name="shallow water">
+	<item fromid="4817" toid="4820" name="water">
 		<attribute key="primarytype" value="natural tiles"/>
-		<attribute key="fluidsource" value="water"/>
+		<attribute key="fluidsource" value="saltwater"/>
 		<attribute key="effect" value="bluebubble"/>
 	</item>
 	<item fromid="4821" toid="4822" name="dirt"/>
@@ -14422,7 +14404,7 @@
 	</item>
 	<item fromid="5076" toid="5079" article="a" name="stony pond">
 		<attribute key="primarytype" value="constructions"/>
-		<attribute key="fluidsource" value="water"/>
+		<attribute key="fluidsource" value="freshwater"/>
 	</item>
 	<item id="5080" article="a" name="panda teddy">
 		<attribute key="primarytype" value="dolls and bears"/>
@@ -15457,7 +15439,7 @@
 	</item>
 	<item fromid="5739" toid="5740" article="an" name="antic well">
 		<attribute key="primarytype" value="constructions"/>
-		<attribute key="fluidsource" value="water"/>
+		<attribute key="fluidsource" value="freshwater"/>
 	</item>
 	<item id="5741" article="a" name="skull helmet">
 		<attribute key="primarytype" value="helmets"/>
@@ -17642,7 +17624,7 @@
 	</item>
 	<item id="6389" article="an" name="ornamented fountain">
 		<attribute key="primarytype" value="constructions"/>
-		<attribute key="fluidsource" value="water"/>
+		<attribute key="fluidsource" value="freshwater"/>
 	</item>
 	<item id="6390" article="a" name="nightmare shield">
 		<attribute key="primarytype" value="shields"/>
@@ -18265,11 +18247,11 @@
 	<item fromid="6609" toid="6626" name="snow">
 		<attribute key="primarytype" value="natural tiles"/>
 	</item>
-	<item fromid="6627" toid="6682" name="shallow water">
+	<item fromid="6627" toid="6682" name="water">
 		<attribute key="primarytype" value="natural tiles"/>
 	</item>
 	<item fromid="6683" toid="6686" name="ice"/>
-	<item fromid="6687" toid="6694" name="shallow water">
+	<item fromid="6687" toid="6694" name="water">
 		<attribute key="primarytype" value="natural tiles"/>
 	</item>
 	<item fromid="6695" toid="6718" name="ice"/>
@@ -21597,7 +21579,7 @@
 	<item fromid="8033" toid="8034" article="an" name="energy fence">
 		<attribute key="primarytype" value="walls"/>
 	</item>
-	<item id="8035" name="shallow water">
+	<item id="8035" name="water">
 		<attribute key="primarytype" value="natural tiles"/>
 	</item>
 	<item id="8036" article="a" name="dead tree">
@@ -25630,7 +25612,7 @@
 	<item fromid="9575" toid="9581" name="pavement"/>
 	<item id="9582" name="remains of a water elemental">
 		<attribute key="description" value="Something is wobbling inside. Maybe with a fishing rod you could reach it."/>
-		<attribute key="fluidsource" value="water"/>
+		<attribute key="fluidsource" value="freshwater"/>
 		<attribute key="duration" value="10"/>
 		<attribute key="decayTo" value="9583"/>
 	</item>
@@ -31839,7 +31821,7 @@
 			<attribute key="weaponType" value="club"/>
 		</attribute>
 	</item>
-	<item fromid="13988" toid="13989" name="shallow water">
+	<item fromid="13988" toid="13989" name="beach">
 		<attribute key="primarytype" value="natural tiles"/>
 	</item>
 	<item id="13990" article="a" name="necklace of the deep">
@@ -42184,10 +42166,31 @@
 		<attribute key="description" value="This printout is nearly unreadable. One column of numbers on it is followed by the word: Doubleday"/>
 		<attribute key="weight" value="50"/>
 	</item>
-	<item fromid="21302" toid="21322" name="shallow water">
+	<item fromid="21302" toid="21306" name="water">
 		<attribute key="primarytype" value="natural tiles"/>
-		<attribute key="fluidsource" value="water"/>
-		<attribute key="effect" value="bluebubble"/>
+		<attribute key="fluidsource" value="freshwater"/>
+		<attribute key="type" value="trashholder"/>
+	</item>
+	<item fromid="21307" toid="21307" name="water">
+		<attribute key="primarytype" value="natural tiles"/>
+		<attribute key="fluidsource" value="freshwater"/>
+		<attribute key="decayTo" value="21302"/>
+		<attribute key="type" value="trashholder"/>
+	</item>
+	<item fromid="21311" toid="21314" name="water">
+		<attribute key="primarytype" value="natural tiles"/>
+		<attribute key="fluidsource" value="freshwater"/>
+		<attribute key="type" value="trashholder"/>
+	</item>
+	<item fromid="21315" toid="21315" name="water">
+		<attribute key="primarytype" value="natural tiles"/>
+		<attribute key="fluidsource" value="freshwater"/>
+		<attribute key="decayTo" value="21311"/>
+		<attribute key="type" value="trashholder"/>
+	</item>
+	<item fromid="21316" toid="21322" name="water">
+		<attribute key="primarytype" value="natural tiles"/>
+		<attribute key="fluidsource" value="freshwater"/>
 	</item>
 	<item id="21323" article="an" name="imported water pipe">
 		<attribute key="primarytype" value="utilities"/>
@@ -42391,7 +42394,7 @@
 		<attribute key="writeable" value="1"/>
 		<attribute key="weight" value="200"/>
 	</item>
-	<item id="21414" article="a" name="shallow water">
+	<item id="21414" article="a" name="water">
 		<attribute key="primarytype" value="natural tiles"/>
 	</item>
 	<item id="21415" article="a" name="bed">
@@ -54005,7 +54008,7 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 		<attribute key="description" value="It looks quite fragile"/>
 		<attribute key="weight" value="180"/>
 	</item>
-	<item id="28710" article="the" name="peacock ballad">
+	<item id="28710" article="the" name="Peacock Ballad">
 		<attribute key="weight" value="50"/>
 	</item>
 	<item fromid="28711" toid="28712" name="RESERVED SPRITE"/>
@@ -57734,9 +57737,9 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 		<attribute key="floorchange" value="down"/>
 	</item>
 	<item id="31170" name="unknown item"/>
-	<item fromid="31171" toid="31182" name="shallow water">
+	<item fromid="31171" toid="31182" name="water">
 		<attribute key="primarytype" value="natural tiles"/>
-		<attribute key="fluidsource" value="water"/>
+		<attribute key="fluidsource" value="saltwater"/>
 	</item>
 	<item id="31183" article="a" name="dwarven stone chair">
 		<attribute key="wrapableto" value="23398"/>
@@ -58603,7 +58606,7 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 		<attribute key="decayTo" value="31452"/>
 		<attribute key="containersize" value="32"/>
 	</item>
-	<item fromid="31454" toid="31461" article="a" name="shallow water">
+	<item fromid="31454" toid="31461" article="a" name="water">
 		<attribute key="primarytype" value="natural tiles"/>
 	</item>
 	<item id="31462" article="a" name="jousting eagle baby">
@@ -70988,7 +70991,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="primarytype" value="artificial tiles"/>
 	</item>
 	<item fromid="38108" toid="38111" name="lily pads"/>
-	<item fromid="38112" toid="38144" name="shallow water">
+	<item fromid="38112" toid="38144" name="water">
 		<attribute key="primarytype" value="natural tiles"/>
 	</item>
 	<item fromid="38145" toid="38156" name="water"/>
@@ -71212,7 +71215,7 @@ Granted by TibiaGoals.com"/>
 	</item>
 	<item fromid="38980" toid="39002" article="a" name="burnt soil"/>
 	<item id="39003" article="a" name="tentugly"/>
-	<item fromid="39004" toid="39035" name="shallow water">
+	<item fromid="39004" toid="39035" name="water">
 		<attribute key="primarytype" value="natural tiles"/>
 	</item>
 	<item id="39036" article="a" name="rainbow opal">
@@ -71240,7 +71243,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="primarytype" value="decoration"/>
 	</item>
 	<item fromid="39108" toid="39115" article="a" name="small amphora"/>
-	<item id="39116" name="shallow water">
+	<item id="39116" name="water">
 		<attribute key="primarytype" value="natural tiles"/>
 	</item>
 	<item fromid="39117" toid="39120" article="a" name="naga sleeping basket"/>
@@ -73194,7 +73197,7 @@ Granted by TibiaGoals.com"/>
 	<item id="39582" article="a" name="puny ice flower">
 		<attribute key="weight" value="50"/>
 	</item>
-	<item fromid="39612" toid="39615" name="shallow water">
+	<item fromid="39612" toid="39615" name="water">
 		<attribute key="primarytype" value="natural tiles"/>
 	</item>
 	<item fromid="39632" toid="39637" article="a" name="mangrove"/>
