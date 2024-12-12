@@ -3502,7 +3502,7 @@ void ProtocolGame::sendCyclopediaCharacterGeneralStats() {
 	msg.add<uint16_t>(player->getMagicLevelPercent() * 100);
 
 	for (uint8_t i = SKILL_FIRST; i < SKILL_CRITICAL_HIT_CHANCE; ++i) {
-		static const uint8_t HardcodedSkillIds[] = { 11, 9, 8, 10, 7, 6, 13 };
+		static const uint8_t HardcodedSkillIds[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 27 };
 		const auto skill = static_cast<skills_t>(i);
 		msg.addByte(HardcodedSkillIds[i]);
 		msg.add<uint16_t>(std::min<int32_t>(player->getSkillLevel(skill), std::numeric_limits<uint16_t>::max()));
@@ -5923,7 +5923,7 @@ void ProtocolGame::sendMarketDetail(uint16_t itemId, uint8_t tier) {
 		std::ostringstream ss;
 		bool separator = false;
 
-		for (uint8_t i = SKILL_FIRST; i <= SKILL_FISHING; i++) {
+		for (uint8_t i = SKILL_FIRST; i <= SKILL_WISDOM; i++) {
 			if (!it.abilities->skills[i]) {
 				continue;
 			}
@@ -7879,7 +7879,7 @@ void ProtocolGame::AddPlayerSkills(NetworkMessage &msg) {
 	msg.addByte(0xA1);
 
 	if (oldProtocol) {
-		for (uint8_t i = SKILL_FIRST; i <= SKILL_FISHING; ++i) {
+		for (uint8_t i = SKILL_FIRST; i <= SKILL_WISDOM; ++i) {
 			auto skill = static_cast<skills_t>(i);
 			msg.add<uint16_t>(std::min<int32_t>(player->getSkillLevel(skill), std::numeric_limits<uint16_t>::max()));
 			msg.add<uint16_t>(player->getBaseSkill(skill));
@@ -7891,7 +7891,7 @@ void ProtocolGame::AddPlayerSkills(NetworkMessage &msg) {
 		msg.add<uint16_t>(player->getLoyaltyMagicLevel());
 		msg.add<uint16_t>(player->getMagicLevelPercent() * 100);
 
-		for (uint8_t i = SKILL_FIRST; i <= SKILL_FISHING; ++i) {
+		for (uint8_t i = SKILL_FIRST; i <= SKILL_WISDOM; ++i) {
 			auto skill = static_cast<skills_t>(i);
 			msg.add<uint16_t>(std::min<int32_t>(player->getSkillLevel(skill), std::numeric_limits<uint16_t>::max()));
 			msg.add<uint16_t>(player->getBaseSkill(skill));

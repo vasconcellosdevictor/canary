@@ -368,6 +368,20 @@ Game::Game() {
 		{ static_cast<uint8_t>(DROME), "Drome Score" },
 		{ static_cast<uint8_t>(EXPERIENCE), "Experience Points" },
 		{ static_cast<uint8_t>(FISHING), "Fishing" },
+		{ static_cast<uint8_t>(MINING), "Mining" },
+		{ static_cast<uint8_t>(SMITHING), "Smithing" },
+		{ static_cast<uint8_t>(ENCHANTING), "Enchanting" },
+		{ static_cast<uint8_t>(WOODCUTTING), "Woodcutting" },
+		{ static_cast<uint8_t>(FLETCHING), "Fletching" },
+		{ static_cast<uint8_t>(HUNTING), "Hunting" },
+		{ static_cast<uint8_t>(FARMING), "Farming" },
+		{ static_cast<uint8_t>(COOKING), "Cooking" },
+		{ static_cast<uint8_t>(CRAFTING), "Crafting" },
+		{ static_cast<uint8_t>(HERBLORE), "Herblore" },
+		{ static_cast<uint8_t>(ALCHEMY), "Alchemy" },
+		{ static_cast<uint8_t>(ARCHAEOLOGY), "Archaeology" },
+		{ static_cast<uint8_t>(MUSIC), "Music" },
+		{ static_cast<uint8_t>(WISDOM), "Wisdom" },
 		{ static_cast<uint8_t>(FIST_FIGHTING), "Fist Fighting" },
 		{ static_cast<uint8_t>(GOSHNAR), "Goshnar's Taint" },
 		{ static_cast<uint8_t>(LOYALTY_POINTS), "Loyalty Points" },
@@ -385,6 +399,20 @@ Game::Game() {
 		HighscoreCategory("Distance Fighting", static_cast<uint8_t>(HighscoreCategories_t::DISTANCE_FIGHTING)),
 		HighscoreCategory("Shielding", static_cast<uint8_t>(HighscoreCategories_t::SHIELDING)),
 		HighscoreCategory("Fishing", static_cast<uint8_t>(HighscoreCategories_t::FISHING)),
+		HighscoreCategory("Mining", static_cast<uint8_t>(HighscoreCategories_t::MINING)),
+		HighscoreCategory("Smithing", static_cast<uint8_t>(HighscoreCategories_t::SMITHING)),
+		HighscoreCategory("Enchanting", static_cast<uint8_t>(HighscoreCategories_t::ENCHANTING)),
+		HighscoreCategory("Woodcutting", static_cast<uint8_t>(HighscoreCategories_t::WOODCUTTING)),
+		HighscoreCategory("Fletching", static_cast<uint8_t>(HighscoreCategories_t::FLETCHING)),
+		HighscoreCategory("Hunting", static_cast<uint8_t>(HighscoreCategories_t::HUNTING)),
+		HighscoreCategory("Farming", static_cast<uint8_t>(HighscoreCategories_t::FARMING)),
+		HighscoreCategory("Cooking", static_cast<uint8_t>(HighscoreCategories_t::COOKING)),
+		HighscoreCategory("Crafting", static_cast<uint8_t>(HighscoreCategories_t::CRAFTING)),
+		HighscoreCategory("Herblore", static_cast<uint8_t>(HighscoreCategories_t::HERBLORE)),
+		HighscoreCategory("Alchemy", static_cast<uint8_t>(HighscoreCategories_t::ALCHEMY)),
+		HighscoreCategory("Archaeology", static_cast<uint8_t>(HighscoreCategories_t::ARCHAEOLOGY)),
+		HighscoreCategory("Music", static_cast<uint8_t>(HighscoreCategories_t::MUSIC)),
+		HighscoreCategory("Wisdom", static_cast<uint8_t>(HighscoreCategories_t::WISDOM)),
 		HighscoreCategory("Magic Level", static_cast<uint8_t>(HighscoreCategories_t::MAGIC_LEVEL))
 	};
 
@@ -8687,6 +8715,34 @@ std::string Game::getSkillNameById(uint8_t &skill) {
 			return "skill_shielding";
 		case HighscoreCategories_t::FISHING:
 			return "skill_fishing";
+		case HighscoreCategories_t::MINING:
+			return "skill_mining";
+		case HighscoreCategories_t::SMITHING:
+			return "skill_smithing";
+		case HighscoreCategories_t::ENCHANTING:
+			return "skill_enchanting";
+		case HighscoreCategories_t::WOODCUTTING:
+			return "skill_woodcutting";
+		case HighscoreCategories_t::FLETCHING:
+			return "skill_fletching";
+		case HighscoreCategories_t::HUNTING:
+			return "skill_hunting";
+		case HighscoreCategories_t::FARMING:
+			return "skill_farming";
+		case HighscoreCategories_t::COOKING:
+			return "skill_cooking";
+		case HighscoreCategories_t::CRAFTING:
+			return "skill_crafting";
+		case HighscoreCategories_t::HERBLORE:
+			return "skill_herblore";
+		case HighscoreCategories_t::ALCHEMY:
+			return "skill_alchemy";
+		case HighscoreCategories_t::ARCHAEOLOGY:
+			return "skill_archaeology";
+		case HighscoreCategories_t::MUSIC:
+			return "skill_music";
+		case HighscoreCategories_t::WISDOM:
+			return "skill_wisdom";
 		case HighscoreCategories_t::MAGIC_LEVEL:
 			return "maglevel";
 		case HighscoreCategories_t::BOSS_POINTS:

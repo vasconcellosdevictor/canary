@@ -2,9 +2,11 @@ local skillMap = {
 	club = SKILL_CLUB,
 	sword = SKILL_SWORD,
 	axe = SKILL_AXE,
-	dist = SKILL_DISTANCE,
+	distance = SKILL_DISTANCE,
 	shield = SKILL_SHIELD,
-	fish = SKILL_FISHING,
+	fishing = SKILL_FISHING,
+	--[[woodcutting = SKILL_WOODCUTTING,
+	mining = SKILL_MINING,]] --XXXXX NOT WORKING ON NEW SKILLS?
 }
 
 local function getSkillId(skillName)

@@ -233,7 +233,7 @@ uint16_t Vocations::getPromotedVocation(uint16_t vocationId) const {
 	return VOCATION_NONE;
 }
 
-uint32_t Vocation::skillBase[SKILL_LAST + 1] = { 50, 50, 50, 50, 30, 100, 20 };
+uint32_t Vocation::skillBase[SKILL_LAST + 1] = { 50, 50, 50, 50, 30, 100, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20 };
 constexpr uint16_t minSkillLevel = 10;
 
 const std::string &Vocation::getVocName() const {

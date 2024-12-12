@@ -931,6 +931,146 @@ bool ConditionAttributes::setParam(ConditionParam_t param, int32_t value) {
 			return true;
 		}
 
+		case CONDITION_PARAM_SKILL_MINING: {
+			skills[SKILL_MINING] = value;
+			return true;
+		}
+
+		case CONDITION_PARAM_SKILL_MININGPERCENT: {
+			skillsPercent[SKILL_MINING] = value;
+			return true;
+		}
+
+		case CONDITION_PARAM_SKILL_SMITHING: {
+			skills[SKILL_SMITHING] = value;
+			return true;
+		}
+
+		case CONDITION_PARAM_SKILL_SMITHINGPERCENT: {
+			skillsPercent[SKILL_SMITHING] = value;
+			return true;
+		}
+
+		case CONDITION_PARAM_SKILL_ENCHANTING: {
+			skills[SKILL_ENCHANTING] = value;
+			return true;
+		}
+
+		case CONDITION_PARAM_SKILL_ENCHANTINGPERCENT: {
+			skillsPercent[SKILL_ENCHANTING] = value;
+			return true;
+		}
+
+		case CONDITION_PARAM_SKILL_WOODCUTTING: {
+			skills[SKILL_WOODCUTTING] = value;
+			return true;
+		}
+
+		case CONDITION_PARAM_SKILL_WOODCUTTINGPERCENT: {
+			skillsPercent[SKILL_WOODCUTTING] = value;
+			return true;
+		}
+
+		case CONDITION_PARAM_SKILL_FLETCHING: {
+			skills[SKILL_FLETCHING] = value;
+			return true;
+		}
+
+		case CONDITION_PARAM_SKILL_FLETCHINGPERCENT: {
+			skillsPercent[SKILL_FLETCHING] = value;
+			return true;
+		}
+
+		case CONDITION_PARAM_SKILL_HUNTING: {
+			skills[SKILL_HUNTING] = value;
+			return true;
+		}
+
+		case CONDITION_PARAM_SKILL_HUNTINGPERCENT: {
+			skillsPercent[SKILL_HUNTING] = value;
+			return true;
+		}
+
+		case CONDITION_PARAM_SKILL_FARMING: {
+			skills[SKILL_FARMING] = value;
+			return true;
+		}
+
+		case CONDITION_PARAM_SKILL_FARMINGPERCENT: {
+			skillsPercent[SKILL_FARMING] = value;
+			return true;
+		}
+
+		case CONDITION_PARAM_SKILL_COOKING: {
+			skills[SKILL_COOKING] = value;
+			return true;
+		}
+
+		case CONDITION_PARAM_SKILL_COOKINGPERCENT: {
+			skillsPercent[SKILL_COOKING] = value;
+			return true;
+		}
+
+		case CONDITION_PARAM_SKILL_CRAFTING: {
+			skills[SKILL_CRAFTING] = value;
+			return true;
+		}
+
+		case CONDITION_PARAM_SKILL_CRAFTINGPERCENT: {
+			skillsPercent[SKILL_CRAFTING] = value;
+			return true;
+		}
+
+		case CONDITION_PARAM_SKILL_HERBLORE: {
+			skills[SKILL_HERBLORE] = value;
+			return true;
+		}
+
+		case CONDITION_PARAM_SKILL_HERBLOREPERCENT: {
+			skillsPercent[SKILL_HERBLORE] = value;
+			return true;
+		}
+
+		case CONDITION_PARAM_SKILL_ALCHEMY: {
+			skills[SKILL_ALCHEMY] = value;
+			return true;
+		}
+
+		case CONDITION_PARAM_SKILL_ALCHEMYPERCENT: {
+			skillsPercent[SKILL_ALCHEMY] = value;
+			return true;
+		}
+
+		case CONDITION_PARAM_SKILL_ARCHAEOLOGY: {
+			skills[SKILL_ARCHAEOLOGY] = value;
+			return true;
+		}
+
+		case CONDITION_PARAM_SKILL_ARCHAEOLOGYPERCENT: {
+			skillsPercent[SKILL_ARCHAEOLOGY] = value;
+			return true;
+		}
+
+		case CONDITION_PARAM_SKILL_MUSIC: {
+			skills[SKILL_MUSIC] = value;
+			return true;
+		}
+
+		case CONDITION_PARAM_SKILL_MUSICPERCENT: {
+			skillsPercent[SKILL_MUSIC] = value;
+			return true;
+		}
+
+		case CONDITION_PARAM_SKILL_WISDOM: {
+			skills[SKILL_WISDOM] = value;
+			return true;
+		}
+
+		case CONDITION_PARAM_SKILL_WISDOMPERCENT: {
+			skillsPercent[SKILL_WISDOM] = value;
+			return true;
+		}
+
 		case CONDITION_PARAM_SKILL_CRITICAL_HIT_CHANCE: {
 			skills[SKILL_CRITICAL_HIT_CHANCE] = value;
 			return true;
