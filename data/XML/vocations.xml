@@ -26,32 +26,32 @@
 		<skill id="19" multiplier="1.1" />
 		<skill id="20" multiplier="1.1" />
 	</vocation>
-	<vocation id="9" clientid="0" baseid="5" name="Adventurer" description="an adventurer" magicshield="0" gaincap="10" gainhp="5" gainmana="5" gainhpticks="12000" gainhpamount="1" gainmanaticks="6000" gainmanaamount="2" manamultiplier="4.0" attackspeed="2000" basespeed="110" soulmax="100" gainsoulticks="120000" fromvoc="9">
-			<formula meleeDamage="1.0" distDamage="1.0" defense="1.0" armor="1.0" />
-			<mitigation multiplier="1.3" primaryShield="2.05" secondaryShield="1.25" />
-			<pvp damageReceivedMultiplier="1.0" damageDealtMultiplier ="1.0"/>
-			<skill id="0" multiplier="1.5" />
-			<skill id="1" multiplier="2.0" />
-			<skill id="2" multiplier="2.0" />
-			<skill id="3" multiplier="2.0" />
-			<skill id="4" multiplier="2.0" />
-			<skill id="5" multiplier="1.5" />
-			<skill id="6" multiplier="1.1" />
-			<skill id="7" multiplier="1.1" />
-			<skill id="8" multiplier="1.1" />
-			<skill id="9" multiplier="1.1" />
-			<skill id="10" multiplier="1.1" />
-			<skill id="11" multiplier="1.1" />
-			<skill id="12" multiplier="1.1" />
-			<skill id="13" multiplier="1.1" />
-			<skill id="14" multiplier="1.1" />
-			<skill id="15" multiplier="1.1" />
-			<skill id="16" multiplier="1.1" />
-			<skill id="17" multiplier="1.1" />
-			<skill id="18" multiplier="1.1" />
-			<skill id="19" multiplier="1.1" />
-			<skill id="20" multiplier="1.1" />
-		</vocation>	
+	<vocation id="9" clientid="0" baseid="0" name="Adventurer" description="an adventurer" magicshield="0" gaincap="10" gainhp="5" gainmana="5" gainhpticks="12000" gainhpamount="1" gainmanaticks="6000" gainmanaamount="2" manamultiplier="4.0" attackspeed="2000" basespeed="110" soulmax="100" gainsoulticks="120000" fromvoc="9">
+		<formula meleeDamage="1.0" distDamage="1.0" defense="1.0" armor="1.0" />
+		<mitigation multiplier="1.3" primaryShield="2.05" secondaryShield="1.25" />
+		<pvp damageReceivedMultiplier="1.0" damageDealtMultiplier ="1.0"/>
+		<skill id="0" multiplier="1.5" />
+		<skill id="1" multiplier="2.0" />
+		<skill id="2" multiplier="2.0" />
+		<skill id="3" multiplier="2.0" />
+		<skill id="4" multiplier="2.0" />
+		<skill id="5" multiplier="1.5" />
+		<skill id="6" multiplier="1.1" />
+		<skill id="7" multiplier="1.1" />
+		<skill id="8" multiplier="1.1" />
+		<skill id="9" multiplier="1.1" />
+		<skill id="10" multiplier="1.1" />
+		<skill id="11" multiplier="1.1" />
+		<skill id="12" multiplier="1.1" />
+		<skill id="13" multiplier="1.1" />
+		<skill id="14" multiplier="1.1" />
+		<skill id="15" multiplier="1.1" />
+		<skill id="16" multiplier="1.1" />
+		<skill id="17" multiplier="1.1" />
+		<skill id="18" multiplier="1.1" />
+		<skill id="19" multiplier="1.1" />
+		<skill id="20" multiplier="1.1" />
+	</vocation>	
 	<vocation id="1" clientid="3" baseid="1" name="Sorcerer" description="a sorcerer" magicshield="1" gaincap="10" gainhp="5" gainmana="30" gainhpticks="12000" gainhpamount="1" gainmanaticks="3000" gainmanaamount="2" manamultiplier="1.1" attackspeed="2000" basespeed="110" soulmax="100" gainsoulticks="120000" fromvoc="1" avatarlooktype="1595">
 		<formula meleeDamage="1.0" distDamage="1.0" defense="1.0" armor="1.0" />
 		<mitigation multiplier="1.26" primaryShield="2.0" secondaryShield="1.2" />
