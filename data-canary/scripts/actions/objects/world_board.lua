@@ -1,4 +1,4 @@
-local communicates = {
+--[[local communicates = {
 	"Welcome to Canary Server! Visit the organization to see all our work: https://github.com/opentibiabr",
 	"Did you like it? Help support what we do here with a donation by visiting the link: https://docs.opentibiabr.com/home/donate/",
 	"Visit our discord to ask questions or report issues: https://discord.gg/gvTj5sh9Mp",
@@ -38,3 +38,4 @@ for index, value in pairs(scriptConfig.registerPositions) do
 end
 
 worldBoard:register()
+]]

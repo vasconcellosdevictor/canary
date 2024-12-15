@@ -11929,13 +11929,11 @@
 		<attribute key="fluidsource" value="blood"/>
 		<attribute key="duration" value="300"/>
 		<attribute key="decayTo" value="3995"/>
-		<attribute key="containersize" value="10"/>
 		<attribute key="weight" value="6300"/>
 	</item>
 	<item id="3995" article="a" name="dead rat">
 		<attribute key="duration" value="300"/>
 		<attribute key="decayTo" value="3996"/>
-		<attribute key="containersize" value="10"/>
 		<attribute key="weight" value="4400"/>
 	</item>
 	<item id="3996" article="a" name="dead rat">
@@ -11994,13 +11992,11 @@
 	<item id="4007" article="a" name="dead wolf">
 		<attribute key="duration" value="300"/>
 		<attribute key="decayTo" value="4008"/>
-		<attribute key="containersize" value="5"/>
 		<attribute key="weight" value="26000"/>
 	</item>
 	<item id="4008" article="a" name="dead wolf">
 		<attribute key="duration" value="300"/>
 		<attribute key="decayTo" value="4009"/>
-		<attribute key="containersize" value="5"/>
 		<attribute key="weight" value="20000"/>
 	</item>
 	<item id="4009" article="a" name="dead wolf">
@@ -13269,7 +13265,6 @@
 		<attribute key="fluidsource" value="blood"/>
 		<attribute key="duration" value="300"/>
 		<attribute key="decayTo" value="3994"/>
-		<attribute key="containersize" value="10"/>
 		<attribute key="weight" value="6300"/>
 	</item>
 	<item id="4256" article="a" name="dead rat">
@@ -16106,7 +16101,6 @@
 		<attribute key="fluidsource" value="blood"/>
 		<attribute key="duration" value="10"/>
 		<attribute key="decayTo" value="3994"/>
-		<attribute key="containersize" value="10"/>
 	</item>
 	<item id="5965" article="a" name="dead human">
 		<attribute key="containersize" value="10"/>
@@ -16127,7 +16121,6 @@
 		<attribute key="fluidsource" value="blood"/>
 		<attribute key="duration" value="10"/>
 		<attribute key="decayTo" value="4007"/>
-		<attribute key="containersize" value="5"/>
 	</item>
 	<item id="5969" article="a" name="dead minotaur">
 		<attribute key="fluidsource" value="blood"/>
@@ -31848,7 +31841,7 @@
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
-	<item id="13992" article="a" name="sandfish" plural="sandfish">
+	<item id="13992" article="a" name="clanwilliam sandfish" plural="clanwilliam sandfish">
 		<attribute key="primarytype" value="food"/>
 		<attribute key="weight" value="660"/>
 	</item>
@@ -79732,6 +79725,26 @@ Granted by TibiaGoals.com"/>
 		<attribute key="primarytype" value="soul cores"/>
 		<attribute key="description" value="Offers a soul to the Soulpit. Combine with an exalted core to turn it into a lesser soul core."/>
 		<attribute key="weight" value="100"/>
+	</item>
+	
+	<!--novos items-->
+	<item id="60000" article="an" name="strange cross">
+	</item>
+	<item id="60001" article="" name="Christ the redeemer">
+	</item>
+	<item id="60002" article="a" name="big armor stand">
+	</item>
+	<item id="60003" article="an" name="sardine" plural="sardines">
+		<attribute key="primarytype" value="food"/>
+		<attribute key="weight" value="520"/>
+	</item>
+	<item id="60004" article="an" name="chicken leg" plural="chicken legs">
+		<attribute key="primarytype" value="food"/>
+		<attribute key="weight" value="520"/>
+	</item>
+	<item id="60005" article="a" name="cat pudding" plural="cat puddings">
+		<attribute key="primarytype" value="food"/>
+		<attribute key="weight" value="520"/>
 	</item>
 </items>
 
