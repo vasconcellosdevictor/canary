@@ -6,7 +6,8 @@ local skillMap = {
 	shield = SKILL_SHIELD,
 	fishing = SKILL_FISHING,
 	--[[woodcutting = SKILL_WOODCUTTING,
-	mining = SKILL_MINING,]] --XXXXX NOT WORKING ON NEW SKILLS?
+	mining = SKILL_MINING,]]
+	--XXXXX NOT WORKING ON NEW SKILLS?
 }
 
 local function getSkillId(skillName)
