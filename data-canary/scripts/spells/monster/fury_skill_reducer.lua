@@ -20,7 +20,7 @@ function spell.onCastSpell(creature, var)
 end
 
 spell:name("fury skill reducer")
-spell:words("###2")
+spell:words("###3")
 spell:isAggressive(true)
 spell:blockWalls(true)
 spell:needLearn(true)

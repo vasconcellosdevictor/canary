@@ -5,10 +5,10 @@ monster.description = "a green frog"
 monster.experience = 0
 monster.outfit = {
 	lookType = 224,
-	lookHead = 69,
-	lookBody = 66,
-	lookLegs = 69,
-	lookFeet = 66,
+	lookHead = 0,
+	lookBody = 0,
+	lookLegs = 0,
+	lookFeet = 0,
 	lookAddons = 0,
 	lookMount = 0,
 }
@@ -47,7 +47,7 @@ monster.flags = {
 	attackable = true,
 	hostile = true,
 	convinceable = true,
-	pushable = true,
+	pushable = false,
 	rewardBoss = false,
 	illusionable = true,
 	canPushItems = false,
@@ -60,6 +60,7 @@ monster.flags = {
 	canWalkOnEnergy = false,
 	canWalkOnFire = false,
 	canWalkOnPoison = false,
+	isPreyExclusive = true,
 }
 
 monster.light = {
@@ -76,13 +77,12 @@ monster.voices = {
 
 monster.loot = {}
 
-monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -25, effect = CONST_ME_DRAWBLOOD },
-}
+monster.attacks = {}
 
 monster.defenses = {
 	defense = 5,
-	armor = 5,
+	armor = 2,
+	mitigation = 0.15,
 }
 
 monster.elements = {

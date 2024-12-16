@@ -5,10 +5,10 @@ monster.description = "an infernal frog"
 monster.experience = 190
 monster.outfit = {
 	lookType = 224,
-	lookHead = 69,
-	lookBody = 66,
-	lookLegs = 69,
-	lookFeet = 66,
+	lookHead = 0,
+	lookBody = 0,
+	lookLegs = 0,
+	lookFeet = 0,
 	lookAddons = 0,
 	lookMount = 0,
 }
@@ -17,12 +17,12 @@ monster.raceId = 563
 monster.Bestiary = {
 	class = "Amphibic",
 	race = BESTY_RACE_AMPHIBIC,
-	toKill = 500,
-	FirstUnlock = 25,
-	SecondUnlock = 250,
-	CharmsPoints = 15,
-	Stars = 2,
-	Occurrence = 0,
+	toKill = 1000,
+	FirstUnlock = 50,
+	SecondUnlock = 500,
+	CharmsPoints = 25,
+	Stars = 3,
+	Occurrence = 1,
 	Locations = "Isle of Evil, Drefia.",
 }
 
@@ -50,7 +50,7 @@ monster.flags = {
 	pushable = false,
 	rewardBoss = false,
 	illusionable = false,
-	canPushItems = true,
+	canPushItems = false,
 	canPushCreatures = true,
 	staticAttackChance = 90,
 	targetDistance = 1,
@@ -60,6 +60,7 @@ monster.flags = {
 	canWalkOnEnergy = false,
 	canWalkOnFire = false,
 	canWalkOnPoison = true,
+	isPreyExclusive = true,
 }
 
 monster.light = {
@@ -86,7 +87,8 @@ monster.attacks = {
 
 monster.defenses = {
 	defense = 5,
-	armor = 5,
+	armor = 18,
+	mitigation = 0.91,
 	{ name = "speed", interval = 2000, chance = 20, speedChange = 400, effect = CONST_ME_MAGIC_RED, target = false, duration = 8000 },
 }
 
@@ -104,7 +106,7 @@ monster.elements = {
 }
 
 monster.immunities = {
-	{ type = "paralyze", condition = false },
+	{ type = "paralyze", condition = true },
 	{ type = "outfit", condition = false },
 	{ type = "invisible", condition = true },
 	{ type = "bleed", condition = false },
