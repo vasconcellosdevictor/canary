@@ -121,4 +121,4 @@ monster.immunities = {
 
 mType:register(monster)
 
-RegisterPrimalPackBeast(monster)
+--RegisterPrimalPackBeast(monster)

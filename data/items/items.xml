@@ -79746,5 +79746,12 @@ Granted by TibiaGoals.com"/>
 		<attribute key="primarytype" value="food"/>
 		<attribute key="weight" value="520"/>
 	</item>
+	<item id="60006" article="an" name="new rune">
+		<attribute key="primarytype" value="attack runes"/>
+		<attribute key="type" value="rune"/>
+		<attribute key="runespellname" value="adevo grav vis"/>
+		<attribute key="charges" value="3"/>
+		<attribute key="weight" value="70"/>
+	</item>	
 </items>
 
