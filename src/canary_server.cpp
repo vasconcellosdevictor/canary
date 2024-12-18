@@ -90,6 +90,7 @@ int CanaryServer::run() {
 				IOMarket::getInstance().updateStatistics();
 
 				logger.info("Loaded all modules, server starting up...");
+				logger.info("This server is up to date until December 14, 2024 - PR #2297: Enhance Monster::getDanceStep code duplication.");
 
 #ifndef _WIN32
 				if (getuid() == 0 || geteuid() == 0) {
@@ -215,6 +216,8 @@ void CanaryServer::logInfos() {
 	logger.info("A server developed by: {}", ProtocolStatus::SERVER_DEVELOPERS);
 	logger.info("Visit our website for updates, support, and resources: "
 	            "https://docs.opentibiabr.com/");
+	logger.info("The Middlegard Online is developed by VLL Worldbuilding"
+	            "https://vllworldbuilding.site");
 }
 
 /**

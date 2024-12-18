@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <monsters>
-	<monster centerx="19990" centery="20008" centerz="7" radius="1">
-		<monster name="A Carved Stone Tile" x="0" y="0" z="7" spawntime="60" />
+	<monster centerx="19991" centery="20009" centerz="7" radius="1">
+		<monster name="A Carved Stone Tile" x="-1" y="-1" z="7" spawntime="60" />
+		<monster name="Dog" x="0" y="0" z="7" spawntime="60" />
 	</monster>
 </monsters>
