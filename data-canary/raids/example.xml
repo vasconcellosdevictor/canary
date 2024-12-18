@@ -2,6 +2,6 @@
 <raid>
 	<announce delay="1000" type="event" message="Beware! The Toad is coming!!!" />
 	<!--Single Spawns-->
-	<singlespawn delay="1000" name="Toad" x="5000" y="5008" z="7" />
+	<singlespawn delay="1000" name="Toad" x="20000" y="20001" z="7" />
 	<!--Area Spawns-->
 </raid>
